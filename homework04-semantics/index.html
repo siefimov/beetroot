@@ -1,13 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
+   <h3>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
-   </head>
+      <title>Семантичні теги html</title>
+   </h3>
    <body>
-      <header></header>
+      <!-- header -->
+      <header>
+         <h1>Семантичні теги html</h1>
+         <div
+            style="
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+            "
+         >
+            <nav>
+               <ul
+                  style="
+                     display: flex;
+                     justify-content: space-between;
+                     gap: 10px;
+                     list-style: none;
+                  "
+               >
+                  <li><a href="#">header</a></li>
+                  <li><a href="#">footer</a></li>
+                  <li><a href="#">aside</a></li>
+                  <li><a href="#">nav</a></li>
+                  <li><a href="#">section</a></li>
+                  <li><a href="#">article</a></li>
+                  <li><a href="#">figure</a></li>
+               </ul>
+            </nav>
+            <form target="search">
+               <input type="search" name="tag" id="tag" />
+               <input type="submit" value="search" />
+            </form>
+         </div>
+      </header>
+      <!-- Основні Semantic Elements -->
+      <section>
+         <h2>Основні Semantic Elements</h2>
+         <!-- header -->
+         <article>
+            <h3>header</h3>
+            <figure>
+               <img
+                  src="./assest/images/header-tag.jpg"
+                  alt="Tag header photo"
+                  width="250"
+                  height="150"
+               />
+               <figcaption>Tag header</figcaption>
+            </figure>
+            <p>
+               The <strong>header</strong> element represents a container for
+               introductory content or a set of navigational links.
+            </p>
+            <p>A <b>header</b> element typically contains:</p>
+            <ul>
+               <li>one or more heading elements (h1 - h6)</li>
+               <li>logo or icon</li>
+               <li>authorship information</li>
+            </ul>
+            <p>
+               You can read more details at this
+               <a
+                  href="https://www.w3schools.com/tags/tag_header.asp"
+                  target="_blank"
+                  >link</a
+               >.
+            </p>
+         </article>
+         <!-- footer -->
+         <article>
+            <h3>footer</h3>
+         </article>
+      </section>
       <main></main>
       <footer></footer>
    </body>
