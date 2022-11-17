@@ -9,7 +9,9 @@
    <body>
       <!-- header -->
       <header>
-         <h1>Семантичні теги html</h1>
+         <h1 style="text-transform: uppercase; padding-left: 40px">
+            HTML semantic tags
+         </h1>
          <div
             style="
                display: flex;
@@ -22,13 +24,14 @@
                   style="
                      display: flex;
                      justify-content: space-between;
-                     gap: 10px;
+                     gap: 30px;
                      list-style: none;
+                     font-size: 1.5rem;
                   "
                >
                   <li><a href="#header-tag">header</a></li>
                   <li><a href="#footer-tag">footer</a></li>
-                  <li><a href="#">aside</a></li>
+                  <li><a href="#aside-tag">aside</a></li>
                   <li><a href="#">nav</a></li>
                   <li><a href="#">section</a></li>
                   <li><a href="#">article</a></li>
@@ -41,83 +44,186 @@
             </form>
          </div>
       </header>
-      <!-- Основні Semantic Elements -->
-      <section>
-         <h2>Main Semantic Tags</h2>
-         <!-- header -->
-         <article>
-            <h3 id="header-tag" style="color: #04aa6d">
-               HTML &lt;header&gt; tag
-            </h3>
-            <figure>
-               <img
-                  src="./assest/images/header-tag.jpg"
-                  alt="Tag header photo"
-                  width="250"
-                  height="150"
-               />
-               <figcaption><i>Tag header</i></figcaption>
-            </figure>
-            <p>
-               The
-               <strong style="color: #04aa6d">&lt;header&gt;</strong> element
-               represents a container for introductory content or a set of
-               navigational links.
-            </p>
-            <p>A <b>header</b> element typically contains:</p>
-            <ul>
-               <li>one or more heading elements (h1 - h6)</li>
-               <li>logo or icon</li>
-               <li>authorship information</li>
-            </ul>
-            <p>
-               You can read more details about &lt;header&gt; tag at this
-               <a
-                  href="https://www.w3schools.com/tags/tag_header.asp"
-                  target="_blank"
-                  >link</a
-               >.
-            </p>
-         </article>
-         <!-- footer -->
-         <article>
-            <h3 id="footer-tag" style="color: #04aa6d">
-               HTML &lt;footer&gt; tag
-            </h3>
-            <figure>
-               <img
-                  src="./assest/images/footer-tag.jpg"
-                  alt="Tag header photo"
-                  width="500"
-                  height="100"
-               />
-               <figcaption><i>Tag footer</i></figcaption>
-            </figure>
-            <p>
-               The <strong style="color: ">&lt;footer&gt;</strong> tag defines a
-               footer for a document or section.
-            </p>
-            <p>A <b>footer</b> element typically contains:</p>
-            <ul>
-               <li>authorship information</li>
-               <li>copyright information</li>
-               <li>contact information</li>
-               <li>sitemap</li>
-               <li>back to top links</li>
-               <li>related documents</li>
-            </ul>
-            <p>
-               You can read more details about &lt;footer&gt; tag at this
-               <a
-                  href="https://www.w3schools.com/tags/tag_footer.asp"
-                  target="_blank"
-                  >link</a
-               >.
-            </p>
-         </article>
-         <!-- aside -->
-      </section>
-      <main></main>
+      <hr />
+
+      <!-- wrapping block for main section -->
+      <div style="display: flex; position: relative">
+         <!-- Основні Semantic Elements -->
+         <section style="flex: 1 0 80%">
+            <h2 style="text-align: center">Main Semantic Tags</h2>
+            <!-- about header tag -->
+            <article>
+               <h3 id="header-tag" style="color: #04aa6d">
+                  HTML &lt;header&gt; tag
+               </h3>
+               <figure>
+                  <img
+                     src="./assest/images/header-tag.jpg"
+                     alt="Tag header photo"
+                     width="250"
+                     height="150"
+                  />
+                  <figcaption><i>Tag header</i></figcaption>
+               </figure>
+               <p>
+                  The
+                  <strong style="color: #04aa6d">&lt;header&gt;</strong> element
+                  represents a container for introductory content or a set of
+                  navigational links.
+               </p>
+               <p>A <b>header</b> element typically contains:</p>
+               <ul>
+                  <li>one or more heading elements (h1 - h6)</li>
+                  <li>logo or icon</li>
+                  <li>authorship information</li>
+               </ul>
+               <p>
+                  You can read more details about &lt;header&gt; tag at this
+                  <a
+                     href="https://www.w3schools.com/tags/tag_header.asp"
+                     target="_blank"
+                     >link</a
+                  >.
+               </p>
+            </article>
+            <hr style="max-width: 600px" />
+            <!-- about footer tag-->
+            <article>
+               <h3 id="footer-tag" style="color: #04aa6d">
+                  HTML &lt;footer&gt; tag
+               </h3>
+               <figure>
+                  <img
+                     src="./assest/images/footer-tag.jpg"
+                     alt="Tag header photo"
+                     width="500"
+                     height="100"
+                  />
+                  <figcaption><i>Tag footer</i></figcaption>
+               </figure>
+               <p>
+                  The <strong style="color: #04aa6d">&lt;footer&gt;</strong> tag
+                  defines a footer for a document or section.
+               </p>
+               <p>A <b>footer</b> element typically contains:</p>
+               <ul>
+                  <li>authorship information</li>
+                  <li>copyright information</li>
+                  <li>contact information</li>
+                  <li>sitemap</li>
+                  <li>back to top links</li>
+                  <li>related documents</li>
+               </ul>
+               <p>
+                  You can read more details about &lt;footer&gt; tag at this
+                  <a
+                     href="https://www.w3schools.com/tags/tag_footer.asp"
+                     target="_blank"
+                     >link</a
+                  >.
+               </p>
+            </article>
+            <hr style="max-width: 600px" />
+            <!-- about aside tag -->
+            <article>
+               <h3 id="aside-tag" style="color: #04aa6d">
+                  HTML &lt;aside&gt; tag
+               </h3>
+               <figure>
+                  <img
+                     src="./assest/images/aside-tag-02.jpg"
+                     alt="Tag header photo"
+                     width="500"
+                     height="100"
+                  />
+                  <figcaption><i>Tag aside</i></figcaption>
+               </figure>
+               <p>
+                  The <strong style="color: #04aa6d">&lt;aside&gt;</strong> tag
+                  defines some content aside from the content it is placed in.
+               </p>
+               <p>
+                  The aside content should be indirectly related to the
+                  surrounding content.
+               </p>
+               <p>
+                  The aside content is often placed as a sidebar in a document.
+               </p>
+               <p>
+                  The aside element does not render as anything special in a
+                  browser. However, you can use CSS to style the aside element.
+               </p>
+
+               <p>
+                  You can read more details about &lt;aside&gt; tag at this
+                  <a
+                     href="https://www.w3schools.com/tags/tag_aside.asp"
+                     target="_blank"
+                     >link</a
+                  >.
+               </p>
+            </article>
+            <hr style="max-width: 600px" />
+
+            <!-- about nav tag -->
+            <article>
+               <h3 id="nav-tag" style="color: #04aa6d">HTML &lt;nav&gt; tag</h3>
+               <figure>
+                  <img
+                     src="./assest/images/nav-tag.jpg"
+                     alt="Tag header photo"
+                     width="350"
+                     height="100"
+                  />
+                  <figcaption><i>Tag nav</i></figcaption>
+               </figure>
+               <p>
+                  The <strong style="color: #04aa6d">&lt;nav&gt;</strong> tag
+                  defines a set of navigation links.
+               </p>
+               <p>
+                  Notice that NOT all links of a document should be inside a nav
+                  element. The nav element is intended only for major blocks of
+                  navigation links.
+               </p>
+               <p>
+                  Browsers, such as screen readers for disabled users, can use
+                  this element to determine whether to omit the initial
+                  rendering of this content.
+               </p>
+               <p>
+                  You can read more details about &lt;nav&gt; tag at this
+                  <a
+                     href="https://www.w3schools.com/tags/tag_nav.asp"
+                     target="_blank"
+                     >link</a
+                  >.
+               </p>
+            </article>
+            <hr style="max-width: 600px" />
+         </section>
+
+         <!-- aside section-->
+         <aside
+            style="
+               flex: 0 0 20%;
+               border-left: 1px solid lightslategray;
+               padding-left: 10px;
+               position: sticky;
+            "
+         >
+            <h2>Semantic Tags</h2>
+            <nav>
+               <ul>
+                  <li><a href="#header-tag">header</a></li>
+                  <li><a href="#footer-tag">footer</a></li>
+                  <li><a href="#aside-tag">aside</a></li>
+                  <li><a href="#nav-tag">aside</a></li>
+               </ul>
+            </nav>
+         </aside>
+      </div>
+
       <footer></footer>
    </body>
 </html>
