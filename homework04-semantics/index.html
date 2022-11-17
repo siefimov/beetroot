@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-   <h3>
+   <head>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Семантичні теги html</title>
-   </h3>
+      <title>Html semantic tags</title>
+   </head>
    <body>
       <!-- header -->
       <header>
@@ -47,7 +47,7 @@
       <hr />
 
       <!-- wrapping block for main section -->
-      <div style="display: flex; position: relative">
+      <div style="display: flex">
          <!-- Основні Semantic Elements -->
          <section style="flex: 1 0 80%">
             <h2 style="text-align: center">Main Semantic Tags</h2>
@@ -329,7 +329,7 @@
                flex: 0 0 20%;
                border-left: 1px solid lightslategray;
                padding-left: 10px;
-               position: -webkit-sticky;
+               align-self: flex-start;
                position: sticky;
                top: 0;
             "
@@ -337,18 +337,33 @@
             <h2>Semantic Tags</h2>
             <nav>
                <ul>
-                  <li><a href="#header-tag">header</a></li>
-                  <li><a href="#footer-tag">footer</a></li>
-                  <li><a href="#aside-tag">aside</a></li>
-                  <li><a href="#nav-tag">nav</a></li>
-                  <li><a href="#section-tag">section</a></li>
-                  <li><a href="#article-tag">article</a></li>
-                  <li><a href="#figure-tag">figure</a></li>
+                  <li style="margin-bottom: 10px; list-style: none">
+                     <a href="#header-tag">header</a>
+                  </li>
+                  <li style="margin-bottom: 10px; list-style: none">
+                     <a href="#footer-tag">footer</a>
+                  </li>
+                  <li style="margin-bottom: 10px; list-style: none">
+                     <a href="#aside-tag">aside</a>
+                  </li>
+                  <li style="margin-bottom: 10px; list-style: none">
+                     <a href="#nav-tag">nav</a>
+                  </li>
+                  <li style="margin-bottom: 10px; list-style: none">
+                     <a href="#section-tag">section</a>
+                  </li>
+                  <li style="margin-bottom: 10px; list-style: none">
+                     <a href="#article-tag">article</a>
+                  </li>
+                  <li style="margin-bottom: 10px; list-style: none">
+                     <a href="#figure-tag">figure</a>
+                  </li>
                </ul>
             </nav>
          </aside>
       </div>
 
+      <!-- footer -->
       <footer
          style="
             text-align: center;
