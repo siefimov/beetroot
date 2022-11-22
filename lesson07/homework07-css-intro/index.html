@@ -61,15 +61,15 @@
          <section class="about section">
             <h2 class="about__title title">About me</h2>
             <div class="about__content">
-               <p>
+               <p class="about__text">
                   Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in
                   design and everything connected with it.
                </p>
-               <p>
+               <p class="about__text">
                   I'm studying at courses "Web and mobile design interfaces" in
                   IT-Academy.
                </p>
-               <p>
+               <p class="about__text">
                   Ready to implement excellent projects with wonderful people.
                </p>
             </div>
@@ -91,7 +91,10 @@
                         src="./assets/image/photoshop.png"
                         alt="Photoshop logo"
                      />
-                     <p class="skills__text">Adobe Photoshop</p>
+                     <p class="skills__text">
+                        Adobe <br />
+                        Photoshop
+                     </p>
                      <!-- rating for Adobe photoshop -->
                      <div>
                         <img
@@ -124,7 +127,10 @@
                         src="./assets/image/illustrator.png"
                         alt="Photoshop logo"
                      />
-                     <p class="skills__text">Adobe Illustrator</p>
+                     <p class="skills__text">
+                        Adobe <br />
+                        Illustrator
+                     </p>
                      <!-- rating for Adobe Illustrator -->
                      <div>
                         <img
@@ -153,11 +159,14 @@
                   <!-- Adobe After Effects -->
                   <div class="skills__item">
                      <img
-                        class="skills_img"
+                        class="skills__img"
                         src="./assets/image/after-effects.png"
-                        alt="Photoshop logo"
+                        alt="After Effects logo"
                      />
-                     <p class="skills__text">Adobe After Effects</p>
+                     <p class="skills__text">
+                        Adobe <br />
+                        After Effects
+                     </p>
                      <!-- rating for Adobe After Effects -->
                      <div>
                         <img
@@ -186,11 +195,11 @@
                   <!-- Figma -->
                   <div class="skills__item">
                      <img
-                        class="skills_img"
+                        class="skills__img"
                         src="./assets/image/figma.png"
                         alt="Photoshop logo"
                      />
-                     <p class="skills__text">Figma</p>
+                     <p class="skills__text figma">Figma</p>
                      <!-- rating for Figma -->
                      <div>
                         <img
@@ -221,47 +230,57 @@
          </section>
 
          <!-- PORTFOLIO -->
-         <section class="porfolio section">
-            <h2 class="title">Portfolio</h2>
-            <article>
-               <img
-                  src="./assets/image/fashion-store.png"
-                  alt="Fashion store photo"
-               />
-               <p>Online fashion store - Homepage</p>
-            </article>
+         <section class="portfolio section">
+            <div class="container">
+               <h2 class="portfolio__title title">Portfolio</h2>
+               <article class="portfolio__block">
+                  <img
+                     class="portfolio__img"
+                     src="./assets/image/fashion-store.png"
+                     alt="Fashion store photo"
+                  />
+                  <p>
+                     Online fashion store - <br />
+                     Homepage
+                  </p>
+               </article>
 
-            <article>
-               <img
-                  src="./assets/image/reebok_store.png"
-                  alt="Reebok store photo"
-               />
-               <p>Reebok Store - Concept</p>
-            </article>
+               <article class="portfolio__block">
+                  <img
+                     class="portfolio__img"
+                     src="./assets/image/reebok_store.png"
+                     alt="Reebok store photo"
+                  />
+                  <p class="portfolio__text">Reebok Store - Concept</p>
+               </article>
 
-            <article>
-               <img
-                  src="./assets/image/braun-landing.png"
-                  alt="Bra store photo"
-               />
-               <p style="text-align: center">Braun Landing Page - Concept</p>
-            </article>
+               <article class="portfolio__block">
+                  <img
+                     class="portfolio__img"
+                     src="./assets/image/braun-landing.png"
+                     alt="Bra store photo"
+                  />
+                  <p class="portfolio__text">Braun Landing Page - Concept</p>
+               </article>
+            </div>
          </section>
       </main>
 
       <!-- CONTACTS -->
       <footer>
-         <section class="section">
+         <section class="contacts section container">
             <!-- Headings -->
-            <article>
-               <h2 class="title">Contacts</h2>
+            <article class="contacts__header">
+               <h2 class="contacts__title title">Contacts</h2>
                <p>Want to know more or just chat? You are welcome!</p>
             </article>
             <!-- Links -->
-            <article>
-               <button type="submit">Send message</button>
+            <article class="contacts__links">
+               <button class="contacts__button" type="submit">
+                  Send message
+               </button>
 
-               <div>
+               <div class="contacts__social">
                   <a href="#" target="_blank"
                      ><img
                         src="./assets/image/linkedin.svg"
@@ -282,7 +301,9 @@
             </article>
 
             <article>
-               <p>Like me on LinkedIn, Instagram, Behance, Dribble</p>
+               <p class="contacts__text">
+                  Like me on LinkedIn, Instagram, Behance, Dribble
+               </p>
             </article>
          </section>
       </footer>

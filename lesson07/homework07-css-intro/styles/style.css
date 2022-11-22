@@ -68,6 +68,10 @@ body {
 .about__title {
    margin-bottom: 50px;
 }
+.about__text {
+   line-height: 25px;
+   color: #070707;
+}
 
 /* skills */
 .skills {
@@ -83,9 +87,7 @@ body {
    display: flex;
    justify-content: space-between;
 }
-.skills__item {
-   /*  */
-}
+
 .skills__img {
    margin-bottom: 25px;
 }
@@ -96,5 +98,81 @@ body {
    line-height: 19px;
    text-align: center;
    letter-spacing: 0.02em;
+   color: #828282;
+}
+.figma {
+   margin-bottom: 80px;
+}
+
+/* portfolio */
+.portfolio {
+   text-align: center;
+   background-color: #f6f6f6;
+}
+.portfolio__title {
+   margin-bottom: 50px;
+}
+.portfolio__block {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.portfolio__block:not(:last-child) {
+   margin-bottom: 70px;
+}
+
+.portfolio__img {
+   margin-bottom: 40px;
+}
+
+/* contacts */
+.contacts {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.contacts__header {
+   width: 280px;
+   margin-bottom: 60px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   text-align: center;
+}
+.contacts__title {
+   margin-bottom: 20px;
+}
+.contacts__links {
+   width: 310px;
+   margin-bottom: 60px;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.contacts__button {
+   padding: 10px 16px;
+   margin-bottom: 40px;
+
+   background: #070707;
+   border-radius: 22px;
+   color: #ffffff;
+
+   font-weight: 700;
+   line-height: 25px;
+   letter-spacing: 0.1em;
+}
+.contacts__social {
+   width: inherit;
+   display: flex;
+   justify-content: space-between;
+}
+.contacts__text {
+   font-size: 14px;
+   line-height: 19px;
    color: #828282;
 }
