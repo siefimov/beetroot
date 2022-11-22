@@ -8,82 +8,90 @@
          rel="stylesheet"
          href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
       />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+         rel="stylesheet"
+      />
       <link rel="stylesheet" href="./styles/style.css" />
       <title>Css Intro</title>
    </head>
    <body>
-      <div style="max-width: 970px; margin: 0 auto">
-         <!-- HEADER -->
-         <header>
-            <nav>
-               <ul>
-                  <li>
+      <!-- HEADER -->
+      <header class="header">
+         <div class="container">
+            <nav class="nav">
+               <ul class="nav__list">
+                  <li class="nav__item nav__item--active">
                      <a href="#">Home</a>
                   </li>
-                  <li>
+                  <li class="nav__item">
                      <a href="#">About me</a>
                   </li>
-                  <li>
+                  <li class="nav__item">
                      <a href="#">Skills</a>
                   </li>
-                  <li>
+                  <li class="nav__item">
                      <a href="#">Protfolio</a>
                   </li>
-                  <li>
+                  <li class="nav__item">
                      <a href="#">Contacts</a>
                   </li>
                </ul>
             </nav>
-         </header>
+         </div>
+      </header>
 
-         <!-- MAIN -->
-         <main>
-            <!-- First screen -->
-            <section>
-               <h1>Denis Novik</h1>
+      <!-- MAIN -->
+      <main>
+         <!-- First screen -->
+         <section>
+            <div class="container">
+               <h1 class="name">Denis Novik</h1>
                <img
                   src="./assets/image/big.jpg"
                   alt="Full screen photo with man"
                   width="970"
                />
-            </section>
-            <br />
-            <br />
+            </div>
+         </section>
 
-            <!-- ABOUT ME -->
-            <section>
-               <h2>About me</h2>
-               <div>
-                  <p>
-                     Hi, I'm Denis – UX/UI designer from Minsk. <br />
-                     I'm interested in design and everything connected with it.
-                  </p>
-                  <p>
-                     I'm studying at courses "Web and mobile design <br />
-                     interfaces" in IT-Academy.
-                  </p>
-                  <p>
-                     Ready to implement excellent projects <br />
-                     with wonderful people.
-                  </p>
+         <!-- ABOUT ME -->
+         <section class="about section">
+            <h2 class="about__title title">About me</h2>
+            <div class="about__content">
+               <p>
+                  Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in
+                  design and everything connected with it.
+               </p>
+               <p>
+                  I'm studying at courses "Web and mobile design interfaces" in
+                  IT-Academy.
+               </p>
+               <p>
+                  Ready to implement excellent projects with wonderful people.
+               </p>
+            </div>
+         </section>
+
+         <!-- SKILLS -->
+         <section class="skills section">
+            <div class="container">
+               <div class="skills__header">
+                  <h2 class="skills__title title">Skills</h2>
+                  <p>I work in such programs as</p>
                </div>
-            </section>
-            <br />
-            <br />
-
-            <!-- SKILLS -->
-            <section>
-               <h2>Skills</h2>
-               <p>I work in such programs as</p>
                <!-- product list -->
-               <article>
+               <article class="skills__list">
                   <!-- photoshop -->
-                  <div>
+                  <div class="skills__item">
                      <img
+                        class="skills__img"
                         src="./assets/image/photoshop.png"
                         alt="Photoshop logo"
                      />
-                     <p>Adobe Photoshop</p>
+                     <p class="skills__text">Adobe Photoshop</p>
                      <!-- rating for Adobe photoshop -->
                      <div>
                         <img
@@ -110,12 +118,13 @@
                   </div>
 
                   <!-- illustrator -->
-                  <div>
+                  <div class="skills__item">
                      <img
+                        class="skills__img"
                         src="./assets/image/illustrator.png"
                         alt="Photoshop logo"
                      />
-                     <p>Adobe Illustrator</p>
+                     <p class="skills__text">Adobe Illustrator</p>
                      <!-- rating for Adobe Illustrator -->
                      <div>
                         <img
@@ -142,12 +151,13 @@
                   </div>
 
                   <!-- Adobe After Effects -->
-                  <div>
+                  <div class="skills__item">
                      <img
+                        class="skills_img"
                         src="./assets/image/after-effects.png"
                         alt="Photoshop logo"
                      />
-                     <p>Adobe After Effects</p>
+                     <p class="skills__text">Adobe After Effects</p>
                      <!-- rating for Adobe After Effects -->
                      <div>
                         <img
@@ -174,12 +184,17 @@
                   </div>
 
                   <!-- Figma -->
-                  <div>
-                     <img src="./assets/image/figma.png" alt="Photoshop logo" />
-                     <p>Adobe After Effects</p>
+                  <div class="skills__item">
+                     <img
+                        class="skills_img"
+                        src="./assets/image/figma.png"
+                        alt="Photoshop logo"
+                     />
+                     <p class="skills__text">Figma</p>
                      <!-- rating for Figma -->
                      <div>
                         <img
+                           class="skills_img"
                            src="./assets/image/star-black.svg"
                            alt="Black star"
                         />
@@ -202,94 +217,74 @@
                      </div>
                   </div>
                </article>
-            </section>
-            <br />
-            <br />
+            </div>
+         </section>
 
-            <!-- PORTFOLIO -->
-            <section>
-               <h2>Portfolio</h2>
-               <article>
-                  <img
-                     src="./assets/image/fashion-store.png"
-                     alt="Fashion store photo"
-                  />
-                  <p>
-                     Online fashion store - <br />
-                     Homepage
-                  </p>
-               </article>
-               <br />
-               <br />
-               <article>
-                  <img
-                     src="./assets/image/reebok_store.png"
-                     alt="Reebok store photo"
-                  />
-                  <p>Reebok Store - Concept</p>
-               </article>
-               <br />
-               <br />
-               <article>
-                  <img
-                     src="./assets/image/braun-landing.png"
-                     alt="Bra store photo"
-                  />
-                  <p style="text-align: center">Braun Landing Page - Concept</p>
-               </article>
-               <br />
-               <br />
-            </section>
-         </main>
+         <!-- PORTFOLIO -->
+         <section class="porfolio section">
+            <h2 class="title">Portfolio</h2>
+            <article>
+               <img
+                  src="./assets/image/fashion-store.png"
+                  alt="Fashion store photo"
+               />
+               <p>Online fashion store - Homepage</p>
+            </article>
 
-         <!-- CONTACTS -->
-         <footer>
-            <section>
-               <!-- Headings -->
-               <article>
-                  <h2>Contacts</h2>
-                  <p>Want to know more or just chat? You are welcome!</p>
-               </article>
-               <!-- Links -->
-               <article>
-                  <button type="submit">Send message</button>
-                  <br />
-                  <br />
-                  <div>
-                     <a href="#" target="_blank"
-                        ><img
-                           src="./assets/image/linkedin.svg"
-                           alt="LinkedIn logo"
-                     /></a>
-                     <a href="#" target="_blank"
-                        ><img
-                           src="./assets/image/instagram.svg"
-                           alt="Instagram logo"
-                     /></a>
-                     <a href="#" target="_blank"
-                        ><img
-                           src="./assets/image/behance.svg"
-                           alt="Behance logo"
-                     /></a>
-                     <a href="#" target="_blank"
-                        ><img
-                           src="./assets/image/dribbble.svg"
-                           alt="Dribble logo"
-                     /></a>
-                  </div>
-               </article>
-               <br />
-               <article>
-                  <p>
-                     Like me on <br />
-                     LinkedIn, Instagram, Behance,<br />
-                     Dribble
-                  </p>
-               </article>
-            </section>
-            <br />
-            <br />
-         </footer>
-      </div>
+            <article>
+               <img
+                  src="./assets/image/reebok_store.png"
+                  alt="Reebok store photo"
+               />
+               <p>Reebok Store - Concept</p>
+            </article>
+
+            <article>
+               <img
+                  src="./assets/image/braun-landing.png"
+                  alt="Bra store photo"
+               />
+               <p style="text-align: center">Braun Landing Page - Concept</p>
+            </article>
+         </section>
+      </main>
+
+      <!-- CONTACTS -->
+      <footer>
+         <section class="section">
+            <!-- Headings -->
+            <article>
+               <h2 class="title">Contacts</h2>
+               <p>Want to know more or just chat? You are welcome!</p>
+            </article>
+            <!-- Links -->
+            <article>
+               <button type="submit">Send message</button>
+
+               <div>
+                  <a href="#" target="_blank"
+                     ><img
+                        src="./assets/image/linkedin.svg"
+                        alt="LinkedIn logo"
+                  /></a>
+                  <a href="#" target="_blank"
+                     ><img
+                        src="./assets/image/instagram.svg"
+                        alt="Instagram logo"
+                  /></a>
+                  <a href="#" target="_blank"
+                     ><img src="./assets/image/behance.svg" alt="Behance logo"
+                  /></a>
+                  <a href="#" target="_blank"
+                     ><img src="./assets/image/dribbble.svg" alt="Dribble logo"
+                  /></a>
+               </div>
+            </article>
+
+            <article>
+               <p>Like me on LinkedIn, Instagram, Behance, Dribble</p>
+            </article>
+         </section>
+      </footer>
    </body>
 </html>
