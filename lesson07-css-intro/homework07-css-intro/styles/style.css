@@ -28,6 +28,9 @@ body {
    letter-spacing: 0.02em;
    color: #828282;
 }
+.nav__item:hover{
+   color: #070707;
+}
 
 .nav__item--active {
    color: #070707;
