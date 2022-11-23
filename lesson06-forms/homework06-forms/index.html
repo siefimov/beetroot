@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Html Form</title>
+   </head>
+
+   <body>
+      <header>
+         <h2>Форма реєстрації користувача</h2>
+      </header>
+      <section style="width: 400px; background-color: #efefef; padding: 20px">
+         <form action="#">
+            <!-- Full name -->
+            <div style="display: flex; margin-bottom: 10px">
+               <label for="full-name" style="flex: 0 0 30%">Повне ім'я</label>
+               <input type="text" name="full-name" id="full-name" required />
+            </div>
+            <!-- Email -->
+            <div style="display: flex; margin-bottom: 10px">
+               <label for="email" style="flex: 0 0 30%">Email</label>
+               <input type="email" name="email" id="email" required />
+            </div>
+            <!-- Password -->
+            <div style="display: flex; margin-bottom: 10px">
+               <label for="password" style="flex: 0 0 30%">Пароль</label>
+               <input type="password" name="password" id="password" required />
+            </div>
+            <!-- Password again -->
+            <div style="display: flex; margin-bottom: 10px">
+               <label for="password-again" style="flex: 0 0 30%"
+                  >Пароль ще раз</label
+               >
+               <input
+                  type="password"
+                  name="password-again"
+                  id="password-again"
+                  required
+               />
+            </div>
+            <!-- Sex -->
+            <div style="display: flex; margin-bottom: 10px">
+               <span style="flex: 0 0 30%">Стать</span>
+               <label for="sex-man"
+                  ><input
+                     type="radio"
+                     name="sex"
+                     id="sex"
+                     value="man"
+                     checked
+                  />чоловіча</label
+               >
+               <label for="sex-woman"
+                  ><input
+                     type="radio"
+                     name="sex"
+                     id="sex-woman"
+                     value="woman"
+                  />жіноча</label
+               >
+            </div>
+            <!-- Age -->
+            <div style="display: flex; margin-bottom: 10px">
+               <label for="age" style="flex: 0 0 30%">Вік</label>
+               <input type="number" name="age" id="age" required />
+            </div>
+            <!-- Course -->
+            <div style="display: flex; margin-bottom: 10px">
+               <span style="flex: 0 0 30%">Курс</span>
+               <select name="course" id="course" required>
+                  <option value="" selected disabled>-=Виберіть курс=-</option>
+                  <option value="front-end">Fron-End</option>
+                  <option value="back-end">Back-End</option>
+                  <option value="qa">QA</option>
+                  <option value="audi">MSQL</option>
+               </select>
+            </div>
+            <!-- Full address -->
+            <div style="display: flex; margin-bottom: 10px">
+               <label for="full-address" style="flex: 0 0 30%"
+                  >Повна адреса</label
+               >
+               <textarea
+                  name="full-address"
+                  id="full-address"
+                  cols="21"
+                  rows="5"
+                  required
+               ></textarea>
+            </div>
+            <div>
+               <label>
+                  <input type="checkbox" name="" id="" required />
+                  Я погоджуюсь з обробкою персонаьних даних
+               </label>
+            </div>
+            <br />
+            <button type="reset" value="Reset">Очистити форму</button>
+            <button type="submit" value="Submit">Зареєструватися</button>
+            <br />
+         </form>
+      </section>
+
+      <footer>
+         <p>Beetroot Academy - Front-End</p>
+      </footer>
+   </body>
+</html>
