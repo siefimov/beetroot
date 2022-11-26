@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@700&display=swap");
+@import "./myreset.css";
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.625;
+}
+.container {
+  max-width: 1200px;
+  /* padding: 0 15px; */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.logo,
+.nav,
+.buttons {
+  display: inline-block;
+}
+.header {
+  padding: 17px 0;
+}
+.header__logo {
+  margin-right: 198px;
+  position: relative;
+}
+.logo {
+  max-width: 200px;
+}
+.logo__img {
+  position: absolute;
+  top: -22px;
+}
+.header__nav {
+  margin-left: 185px;
+  margin-right: 185px;
+}
+.nav__item {
+  display: inline-block;
+  line-height: 28px;
+}
+.nav__item:not(:last-child) {
+  margin-right: 20px;
+}
+.nav__item.active {
+  color: #ff9900;
+}
+.nav__item:hover {
+  color: #ff9900;
+  cursor: pointer;
+}
+
+.buttons__sign-in,
+.buttons__sign-up {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 4px;
+}
+.buttons__sign-in {
+  color: #2f281e;
+  padding: 13px 26px;
+  border: 1px solid #bcd0e5;
+}
+.buttons__sign-up {
+  padding: 13px 22.5px;
+  background-color: #ff9900;
+  color: #ffffff;
+  margin-left: 32px;
+}
+.buttons__sign-in:hover{
+  background-color: #e9ecf0;
+}
+.buttons__sign-up:hover,
+.left__button:hover {
+  background-color: #ea920f;
+}
+.buttons__sign-in:active {
+  background-color: #ff9900;
+  color: #ffffff;
+}
+.buttons__sign-up:active,
+.left__button:active {
+  background-color: #ffffff;
+  color: #2f281e;
+  border: 1px solid #bcd0e5;
+}
+
+/** MAIN */
+.main {
+  padding-top: 70px;
+}
+/* first screen */
+.first-screen__left {
+  /* margin-right: 56px; */
+}
+.left__title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+  color: #2f281e;
+  margin-right: 56px;
+  margin-top: 97px;
+  margin-bottom: 30px;
+}
+.left__description {
+  font-size: 18px;
+  line-height: 28px;
+  color: #544837;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+.left__button {
+  padding: 13px 40px;
+  background-color: #ff9900;
+  border-radius: 4px;
+
+  font-family: "Poppins";
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+}
+.left__title,
+.first-screen__img {
+  display: inline-block;
+}
+.first-screen__right {
+  max-width: 644px;
+  max-height: 495px;
+}
+.first-screen__img {
+  object-fit: cover;
+  max-width: 644px;
+  max-height: 495px;
+  width: 100%;
+  height: 100%;
+  float: right;
+}
