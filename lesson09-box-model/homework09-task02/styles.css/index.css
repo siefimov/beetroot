@@ -63,9 +63,11 @@ li {
   padding-top: 26px;
   padding-bottom: 26px;
   box-sizing: border-box;
+  transition: all .1s ease-in;
 }
 li:hover {
   opacity: 1;
+  transition: all .1s ease-in;
 }
 .li-1 {
   width: 50%;
