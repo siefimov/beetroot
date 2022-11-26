@@ -51,7 +51,14 @@ main {
 ul {
   font-size: 0;
 }
-
+ul:hover li {
+  opacity: 0.7;
+  transition: all 0.1s ease-in;
+}
+ul li:hover {
+  opacity: 1;
+  transition: all 0.1s ease-in;
+}
 li {
   display: inline-block;
   max-height: 147px;
@@ -59,20 +66,15 @@ li {
   text-align: center;
   color: #ffffff;
   border: 2px solid #ffffff;
-  opacity: 0.7;
   padding-top: 26px;
   padding-bottom: 26px;
   box-sizing: border-box;
-  transition: all .1s ease-in;
+  transition: all 0.1s ease-in;
 }
-li:hover {
-  opacity: 1;
-  transition: all .1s ease-in;
-}
+
 .li-1 {
   width: 50%;
   background-color: #70b8db;
-  /* opacity: 0.7; */
 }
 .li-2 {
   width: 25%;
