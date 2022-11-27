@@ -1,0 +1,32 @@
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+// logo
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// nav
+.nav {
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #3c3c3c;
+  }
+  &__item:not(:last-child) {
+    padding-right: 30px;
+  }
+}
