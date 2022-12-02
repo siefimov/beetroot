@@ -7,15 +7,135 @@ body {
   line-height: 23px;
 }
 .wrapper {
-  display: grid;
-
-  min-height: 100%; /*чтобы вся оболо4ка была на всю высоту экрана*/
+  min-height: 100%;
   overflow: hidden;
+  padding: 120px 0;
 }
-
+.cities,
+.nature {
+  margin-bottom: 120px;
+}
 .container {
   box-sizing: border-box;
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+.gallery {
+  position: relative;
+}
+
+.gallery__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 20px;
+  transition: all 0.1s ease-in-out;
+}
+.gallery__item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    360deg,
+    #241f24 0%,
+    rgba(91, 91, 91, 0.447552) 34.11%,
+    rgba(187, 186, 192, 0.26) 62.5%
+  );
+  border-radius: 20px;
+  transition: all 0.1s ease-in-out;
+}
+.gallery__item:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  transition: all 0.1s ease-in-out;
+}
+.gallery__item:hover::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    0deg,
+    #241f24 1.04%,
+    rgba(91, 91, 91, 0.26) 6.99%,
+    rgba(187, 186, 192, 0) 12.29%
+  );
+  transition: all 0.1s ease-in-out;
+}
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+
+  border-radius: 20px;
+  transition: all 0.1s ease-in-out;
+}
+
+.gallery__img:hover {
+  transition: all 0.1s ease-in-out;
+}
+.title {
+  font-family: "Delius Unicase";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+
+  margin-bottom: 80px;
+}
+
+.gallery__subtitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.subtitle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+}
+.subtitle__name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #ffffff;
+  z-index: 100;
+}
+.subtitle__date {
+  font-weight: 400;
+  color: #e0e0e0;
+  z-index: 100;
+}
+
+/* GRID */
+.gallery {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  /* grid-auto-rows: 370px; */
+  grid-auto-flow: dense;
+}
+.long {
+  grid-column: span 2;
+}
+.height {
+  grid-row: span 2;
+}
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
 }
