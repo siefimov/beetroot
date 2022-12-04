@@ -13,7 +13,7 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
-.header{
+.header {
   margin-bottom: 70px;
 }
 .header__container {
@@ -61,4 +61,40 @@ body {
 
 .header__logo {
   margin-left: auto;
+}
+/* intro */
+.intro__title {
+  margin-bottom: 40px;
+}
+.title {
+  display: flex;
+  color: #000000;
+}
+.title__main {
+  font-family: "Francois One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+.title__extra {
+  font-family: "Farro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+}
+.text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 48px;
+}
+.text__underline {
+  text-decoration: underline;
 }
