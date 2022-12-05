@@ -4,17 +4,11 @@ font-family: 'Staatliches', cursive;
 font-family: 'Tourney', cursive; */
 @import "./reset.css";
 
-body {
-}
-
 .wrapper {
   max-width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
 }
-/* .header {
-  margin-bottom: 70px;
-} */
 .header__container {
   display: flex;
   justify-content: start;
