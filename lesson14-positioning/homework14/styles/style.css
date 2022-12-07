@@ -22,7 +22,7 @@
   justify-content: start;
   align-items: center;
   padding: 13px 0;
-  margin: 13px 0;
+  /* margin: 13px 0; */
 }
 .header_lang {
   font-family: "Tourney", cursive;
@@ -117,7 +117,7 @@ section:not(:last-child) {
 }
 .asaid__list {
   position: sticky;
-  top: 100px;
+  top: 70px;
 }
 .asaid__list-item {
   padding-bottom: 10px;
@@ -192,7 +192,7 @@ section:not(:last-child) {
   height: 100%; */
   position: fixed;
   top: 150px;
-  right: -0px;
+  right: 0px;
   z-index: -1;
 }
 .bg-image__item {
