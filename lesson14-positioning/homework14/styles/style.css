@@ -4,6 +4,18 @@
   max-width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
+  position: relative;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  z-index: 20;
 }
 .header__container {
   display: flex;
@@ -70,13 +82,49 @@
 .header__logo {
   margin-left: auto;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 385px auto;
+  gap: 30px;
+  padding-top: 80px;
+}
+
 main {
-  padding: 70px 0 90px 0;
+  margin-top: 70px;
+  padding: 0px 0 90px 0;
 }
 /* section */
+section {
+  padding-top: 28px;
+  position: relative;
+}
 section:not(:last-child) {
   margin-bottom: 70px;
 }
+.devider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 8px;
+
+  background: #000000;
+}
+.asaid {
+  margin-top: 70px;
+  padding: 10px;
+}
+.asaid__list {
+  position: sticky;
+  top: 100px;
+}
+.asaid__list-item {
+  padding-bottom: 10px;
+  margin-bottom: 70px;
+  border-bottom: 1px solid #bdbdbd;
+}
+
 /* intro */
 .title {
   display: flex;
@@ -92,6 +140,13 @@ section:not(:last-child) {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-right: 10px;
+}
+.asaid__list-link.title__main {
+  margin-right: 0;
+  letter-spacing: 0;
+}
+.asaid__list-link.title__main:hover {
+  color: gray;
 }
 .title__extra {
   font-family: "Farro";
@@ -128,4 +183,20 @@ section:not(:last-child) {
   line-height: 48px;
   display: inline-block;
   height: 48px;
+}
+
+.bg-image {
+  max-height: 760px;
+  max-width: 760px;
+  /* width: 100%;
+  height: 100%; */
+  position: fixed;
+  top: 150px;
+  right: -0px;
+  z-index: -1;
+}
+.bg-image__item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
