@@ -1,0 +1,131 @@
+@import "./reset.css";
+
+.wrapper {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.header__container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 13px 0;
+  margin: 13px 0;
+}
+.header_lang {
+  font-family: "Tourney", cursive;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-right: 50px;
+}
+.header_lang > a:hover {
+  cursor: pointer;
+}
+.header__nav {
+  display: flex;
+}
+.header__nav-item {
+  font-family: "Staatliches", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  position: relative;
+}
+.header__nav-item:first-child::after {
+  content: "/";
+  margin-right: 10px;
+}
+.header__nav-link {
+  position: relative;
+}
+.header__nav-link:hover {
+  color: gray;
+  cursor: pointer;
+}
+.header__nav-link:first-child {
+  margin-right: 10px;
+}
+.header__nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: grey;
+  transition: width 0.2s ease-in;
+}
+.header__nav-link:hover::before {
+  width: 100%;
+}
+.header__logo {
+  margin-left: auto;
+}
+main {
+  padding: 70px 0 90px 0;
+}
+/* section */
+section:not(:last-child) {
+  margin-bottom: 70px;
+}
+/* intro */
+.title {
+  display: flex;
+  margin-bottom: 40px;
+  color: #000000;
+}
+.title__main {
+  font-family: "Francois One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+.title__extra {
+  font-family: "Farro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+}
+.text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 48px;
+}
+.text:not(:last-child) {
+  margin-bottom: 40px;
+}
+.text__underline {
+  text-decoration: underline;
+}
+.text__italic {
+  font-style: italic;
+}
+.text__bold {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 48px;
+  color: #000000;
+}
+.text__code {
+  background-color: #dadada;
+  line-height: 48px;
+  display: inline-block;
+  height: 48px;
+}
