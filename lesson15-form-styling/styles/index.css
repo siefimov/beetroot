@@ -1,1 +1,8 @@
 @import "./reset.css";
+
+.wrapper{
+  max-width: 1200px;
+  padding: 0 15px;
+  background-color: lightblue;
+  height: 1000px;
+}
