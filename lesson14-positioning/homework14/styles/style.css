@@ -1,4 +1,5 @@
 @import "./reset.css";
+@import "./flip-card.css";
 
 .wrapper {
   max-width: 1230px;
@@ -24,7 +25,7 @@
   padding: 13px 0;
   /* margin: 13px 0; */
 }
-.header_lang {
+.header__lang {
   font-family: "Tourney", cursive;
   font-style: normal;
   font-weight: 600;
@@ -38,6 +39,7 @@
 .header_lang > a:hover {
   cursor: pointer;
 }
+
 .header__nav {
   display: flex;
 }
@@ -62,6 +64,9 @@
   color: gray;
   cursor: pointer;
 }
+.header__nav-link:active{
+  color: red;
+}
 .header__nav-link:first-child {
   margin-right: 10px;
 }
@@ -81,6 +86,7 @@
 }
 .header__logo {
   margin-left: auto;
+  cursor: pointer;
 }
 
 .grid {
@@ -117,7 +123,7 @@ section:not(:last-child) {
 }
 .asaid__list {
   position: sticky;
-  top: 70px;
+  top: 160px;
 }
 .asaid__list-item {
   padding-bottom: 10px;

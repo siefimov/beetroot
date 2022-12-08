@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Staatliches&family=Tourney:wght@600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Roboto&family=Staatliches&family=Tourney:wght@600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
@@ -17,13 +17,15 @@
     <div class="wrapper">
       <header class="header">
         <div class="header__container">
-          <div class="header_lang"><a href="#">eng</a></div>
+          <div class="header__lang"><a href="#">eng</a></div>
           <ul class="header__nav">
             <li class="header__nav-item">
               <a href="#" class="header__nav-link">Documentation</a>
             </li>
             <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Who's using</a>
+              <a href="./flip-card.html" class="header__nav-link"
+                >Who's using</a
+              >
             </li>
           </ul>
           <div class="header__logo">
@@ -63,10 +65,10 @@
         </aside>
 
         <main class="main">
-          <section class="intro">
+          <section class="intro" id="intro">
             <div class="devider"></div>
             <div class="intro__title title">
-              <h2 class="title__main" id="intro">Introduction</h2>
+              <h2 class="title__main">Introduction</h2>
               <span class="title__extra"><sup class="sup">Chapter 1</sup></span>
             </div>
             <p class="intro__text text">
@@ -85,10 +87,10 @@
             </div>
           </section>
 
-          <section class="components">
+          <section class="components" id="core">
             <div class="devider"></div>
             <div class="components__title title">
-              <h2 class="title__main" id="core">core components</h2>
+              <h2 class="title__main">core components</h2>
               <span class="title__extra"><sup class="sup">Chapter 2</sup></span>
             </div>
             <p class="components__text text">
@@ -104,10 +106,10 @@
             </p>
           </section>
 
-          <section class="react">
+          <section class="react" id="react">
             <div class="devider"></div>
             <div class="react__title title">
-              <h2 class="title__main" id="react">react fundamentals</h2>
+              <h2 class="title__main">react fundamentals</h2>
               <span class="title__extra"><sup class="sup">Chapter 3</sup></span>
             </div>
             <p class="reat__text text">
@@ -155,10 +157,10 @@
             </p>
           </section>
 
-          <section class="text-input">
+          <section class="text-input" id="input">
             <div class="devider"></div>
             <div class="text-input__title title">
-              <h2 class="title__main" id="input">handling text input</h2>
+              <h2 class="title__main">handling text input</h2>
               <span class="title__extra"><sup class="sup">Chapter 4</sup></span>
             </div>
             <p class="reat__text text">
