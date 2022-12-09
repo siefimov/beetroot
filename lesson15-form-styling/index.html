@@ -4,32 +4,175 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
     <title>Form Styling</title>
   </head>
   <body>
     <div class="wrapper">
-      <div class="sing-up">
-        
-        <header class="sing-up__header header">
-          <h2 class="header__title">Create an Account</h2>
-        </header>
+      <div class="grid-container container">
+        <div class="sing-up">
+          <header class="sing-up__header header">
+            <h2 class="header__title">Create an Account</h2>
+          </header>
 
-        <div class="sign-up__form">
-          <form class="form" action="#">
+          <div class="sign-up__form">
+            <form class="form" action="#" method="post">
+              <!-- 1-st row -->
+              <div class="form__row row">
+                <div class="row__item first-name">
+                  <label class="name__label label" for="first-name"
+                    >First Name</label
+                  >
+                  <input
+                    class="first-name__input input"
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    autofocus
+                  />
+                </div>
+                <div class="row__item last-name">
+                  <label class="last-name__label label" for="last-name"
+                    >Last Name</label
+                  >
+                  <input
+                    class="last-name__input input"
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                  />
+                </div>
+              </div>
+              <!-- 2-nd row -->
+              <div class="form__row row">
+                <div class="row__item email">
+                  <label class="email__label label" for="email">E-mail</label>
+                  <input
+                    class="email__input input"
+                    type="email"
+                    name="email"
+                    id="email"
+                  />
+                  <p class="email__notice">
+                    We'll never share your email with anyone else.
+                  </p>
+                </div>
+              </div>
+              <!-- 3-rd row -->
+              <div class="form__row row">
+                <div class="row__item male">
+                  <input
+                    class="male__radio radio"
+                    type="radio"
+                    name="radio"
+                    id="radio1"
+                  />
+                  <label class="male__label label-r" for="radio1">Male</label>
+                </div>
+                <div class="row__item female">
+                  <input
+                    class="female__radio radio"
+                    type="radio"
+                    name="radio"
+                    id="radio2"
+                  />
+                  <label class="female__label label-r" for="radio2"
+                    >Female</label
+                  >
+                </div>
+              </div>
+              <!-- 4-th row -->
+              <div class="form__row row">
+                <div class="row__item country">
+                  <label class="country__label label" for="country"
+                    >Country</label
+                  >
+                  <input
+                    class="country__input input"
+                    type="text"
+                    name="country"
+                    id="country"
+                    placeholder="Select"
+                  />
+                  <!-- <select class="country__select" name="country" id="country">
+                    <option class="disabled" value="" selected disabled>
+                      Select
+                    </option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                  </select> -->
+                  <div class="arrow-up"></div>
+                  <div class="arrow-down"></div>
+                </div>
+                <div class="row__item city">
+                  <label class="city__label label" for="city">City</label>
+                  <input
+                    class="city__input input"
+                    type="text"
+                    name="city"
+                    id="city"
+                  />
+                </div>
+              </div>
+              <!-- 5-th form row -->
+              <div class="form__row row">
+                <button class="sign-up__button button" type="submit">
+                  Sign Up
+                </button>
+              </div>
+            </form>
+          </div>
 
-          </form>
+          <div class="sing-up__terms">
+            <p class="sing-up__terms-text">
+              By clicking the 'Sign Up' button, you confirm that you accept our
+              <a class="sing-up__terms-link" href="#">Terms of Use</a> and
+              <a class="sing-up__terms-link" href="#">Privacy Policy</a>.
+            </p>
+          </div>
+
+          <footer class="sign-up__footer footer">
+            <p class="footer__text">Have an account?</p>
+            <a class="footer__log-in" href="#">Log In</a>
+          </footer>
         </div>
 
-        <div class="sing-up__terms">
-          
-        </div>
-
-      </div>
-
-      <div class="profile">
-        <div class="profile__header header">
-          <h2 class="header__title">Create an Account</h2>
+        <!-- PROFILE -->
+        <div class="profile">
+          <div class="profile__header header">
+            <h2 class="header__title">Profile</h2>
+          </div>
+          <!-- 1-st row -->
+          <div class="form__row row">
+            <div class="row__item first-name">
+              <label class="name__label label" for="first-name"
+                >First Name</label
+              >
+              <input
+                class="first-name__input input"
+                type="text"
+                name="first-name"
+                id="first-name"
+                autofocus
+              />
+            </div>
+            <div class="row__item email">
+              <label class="email__label label" for="email2">Email</label>
+              <input
+                class="email__input input"
+                type="text"
+                name="email"
+                id="email2"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
