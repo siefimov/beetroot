@@ -21,111 +21,79 @@
             <h2 class="header__title">Create an Account</h2>
           </header>
 
+          <!-- SING UP FORM -->
           <div class="sign-up__form">
             <form class="form" action="#" method="post">
-              <!-- 1-st row -->
+              <!-- 1-st form row -->
               <div class="form__row row">
                 <div class="row__item first-name">
-                  <label class="name__label label" for="first-name"
-                    >First Name</label
-                  >
+                  <label class="name__label label" for="first-name">First Name</label>
                   <input
                     class="first-name__input input"
                     type="text"
                     name="first-name"
                     id="first-name"
                     autofocus
+                    required
                   />
                 </div>
                 <div class="row__item last-name">
-                  <label class="last-name__label label" for="last-name"
-                    >Last Name</label
-                  >
+                  <label class="last-name__label label" for="last-name">Last Name</label>
                   <input
                     class="last-name__input input"
                     type="text"
                     name="last-name"
                     id="last-name"
+                    required
                   />
                 </div>
               </div>
-              <!-- 2-nd row -->
+              <!-- 2-nd form row -->
               <div class="form__row row">
                 <div class="row__item email">
                   <label class="email__label label" for="email">E-mail</label>
-                  <input
-                    class="email__input input"
-                    type="email"
-                    name="email"
-                    id="email"
-                  />
-                  <p class="email__notice">
-                    We'll never share your email with anyone else.
-                  </p>
+                  <input class="email__input input" type="email" name="email" id="email" required />
+                  <p class="email__notice">We'll never share your email with anyone else.</p>
                 </div>
               </div>
-              <!-- 3-rd row -->
+              <!-- 3-rd form row -->
               <div class="form__row row">
                 <div class="row__item male">
-                  <input
-                    class="male__radio radio"
-                    type="radio"
-                    name="radio"
-                    id="radio1"
-                  />
+                  <input class="male__radio radio" type="radio" name="radio" id="radio1" />
+                  <span class="radio__custom"></span>
                   <label class="male__label label-r" for="radio1">Male</label>
                 </div>
+
                 <div class="row__item female">
-                  <input
-                    class="female__radio radio"
-                    type="radio"
-                    name="radio"
-                    id="radio2"
-                  />
-                  <label class="female__label label-r" for="radio2"
-                    >Female</label
-                  >
+                  <input class="female__radio radio" type="radio" name="radio" id="radio2" />
+                  <span class="radio__custom"></span>
+                  <label class="female__label label-r" for="radio2">Female</label>
                 </div>
               </div>
-              <!-- 4-th row -->
+
+              <!-- 4-th form row -->
               <div class="form__row row">
                 <div class="row__item country">
-                  <label class="country__label label" for="country"
-                    >Country</label
-                  >
-                  <input
-                    class="country__input input"
-                    type="text"
-                    name="country"
-                    id="country"
-                    placeholder="Select"
-                  />
-                  <!-- <select class="country__select" name="country" id="country">
-                    <option class="disabled" value="" selected disabled>
+                  <label class="country__label label" for="country">Country</label>
+                  <select class="country__select" name="country" id="country" required>
+                    <option class="country__option" value="" selected disabled hidden>
                       Select
                     </option>
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                  </select> -->
+                    <option class="country__option" value="option1">Option 1</option>
+                    <option class="country__option" value="option2">Option 2</option>
+                    <option class="country__option" value="option3">Option 3</option>
+                  </select>
                   <div class="arrow-up"></div>
                   <div class="arrow-down"></div>
                 </div>
                 <div class="row__item city">
                   <label class="city__label label" for="city">City</label>
-                  <input
-                    class="city__input input"
-                    type="text"
-                    name="city"
-                    id="city"
-                  />
+                  <input class="city__input input" type="text" name="city" id="city" />
                 </div>
               </div>
               <!-- 5-th form row -->
               <div class="form__row row">
-                <button class="sign-up__button button" type="submit">
-                  Sign Up
-                </button>
+                <button class="sign-up__button button" type="submit">Sign Up</button>
               </div>
             </form>
           </div>
@@ -144,34 +112,94 @@
           </footer>
         </div>
 
-        <!-- PROFILE -->
+        <!-- PROFILE FORM-->
         <div class="profile">
           <div class="profile__header header">
             <h2 class="header__title">Profile</h2>
           </div>
-          <!-- 1-st row -->
-          <div class="form__row row">
-            <div class="row__item first-name">
-              <label class="name__label label" for="first-name"
-                >First Name</label
-              >
-              <input
-                class="first-name__input input"
-                type="text"
-                name="first-name"
-                id="first-name"
-                autofocus
-              />
-            </div>
-            <div class="row__item email">
-              <label class="email__label label" for="email2">Email</label>
-              <input
-                class="email__input input"
-                type="text"
-                name="email"
-                id="email2"
-              />
-            </div>
+
+          <div class="profile__form">
+            <form action="#" class="form" method="POST">
+              <!-- 1-st row -->
+              <div class="form__row row">
+                <div class="row__item img-box">
+                  <img
+                    class="img-box__item"
+                    src="./assets/images/profile-photo.png"
+                    alt="Profile photo"
+                  />
+                </div>
+                <div class="row__item file-upload">
+                  <div class="file-upload__box">
+                    <label for="file" class="file-upload__label">
+                      <input class="file-upload__input" type="file" name="file" id="file" />
+                      <span class="file-upload__custom-input"></span>
+                    </label>
+                    <button class="clean__btn" type="reset">
+                      <img src="./assets/images/clean.svg" alt="" />
+                    </button>
+                  </div>
+                  <p class="file-upload__text">Up to 1 MB (300x300 px)</p>
+                </div>
+              </div>
+              <!-- 2-nd row -->
+              <div class="form__row row">
+                <div class="row__item first-name">
+                  <label class="name__label label" for="first-name">First Name</label>
+                  <input
+                    class="first-name__input input"
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                  />
+                </div>
+                <div class="row__item email">
+                  <label class="email__label label" for="email2">Email</label>
+                  <input class="email__input--profile input" type="text" name="email" />
+                </div>
+              </div>
+              <!-- 3-rd form row -->
+              <div class="form__row row">
+                <div class="row__item country">
+                  <label class="country__label label" for="country">Country</label>
+                  <select class="country__select" name="country" id="country" required>
+                    <option class="country__option" value="" selected disabled hidden>
+                      Select
+                    </option>
+                    <option class="country__option" value="option1">Option 1</option>
+                    <option class="country__option" value="option2">Option 2</option>
+                    <option class="country__option" value="option3">Option 3</option>
+                  </select>
+                  <div class="arrow-up"></div>
+                  <div class="arrow-down"></div>
+                </div>
+                <div class="row__item city">
+                  <label class="city__label label" for="city">City</label>
+                  <input class="city__input input" type="text" name="city" id="city" />
+                </div>
+              </div>
+              <!-- 4-th form row -->
+              <div class="form__row row">
+                <div class="row__item zip-code">
+                  <label class="zip-code__label label" for="zip-code">Zip Code</label>
+                  <input
+                    class="zip-code__input input"
+                    type="number"
+                    name="zip-code"
+                    id="zip-code"
+                    required
+                  />
+                </div>
+                <div class="row__item last-name">
+                  <label class="phone__label label" for="phone">Phone Number</label>
+                  <input class="phone__input input" type="tel" name="phone" id="phone" required />
+                </div>
+              </div>
+              <!-- 5-th form row -->
+              <div class="form__row row">
+                <button class="profile__button button" type="submit">Update</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

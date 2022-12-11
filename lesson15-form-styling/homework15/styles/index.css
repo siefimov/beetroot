@@ -2,6 +2,9 @@
 a {
   color: #007bff;
 }
+a:hover {
+  text-decoration: underline;
+}
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -41,16 +44,16 @@ a {
   border-radius: 6px;
   width: 245px;
   height: 38px;
-}
-.input:focus {
-  border: 1px solid #007bff;
   padding-left: 10px;
+}
+.input:focus,
+select:focus {
+  border: 1px solid #007bff;
 }
 .button {
   background-color: #007bff;
   border: 1px solid #e4e4e4;
   border-radius: 6px;
-
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
@@ -66,7 +69,6 @@ a {
 .button:active {
   background-color: #007bff;
 }
-
 .sing-up__header,
 .profile__header {
   margin-bottom: 20px;
@@ -82,23 +84,20 @@ a {
 }
 .row {
   display: flex;
+  align-items: center;
 }
 .row__item {
   display: flex;
   flex-direction: column;
 }
 .row__item:not(:last-child) {
-  /* margin-bottom: 20px; */
   margin-right: 12px;
 }
-
 .email {
   width: 100%;
 }
 .email__input {
   width: 100%;
-}
-.email__input {
   margin-bottom: 7px;
 }
 .email__notice {
@@ -107,25 +106,45 @@ a {
   letter-spacing: -0.1px;
   color: #969696;
 }
-
 .radio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  margin-right: 8px;
+}
+.radio__custom {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 20px;
   height: 20px;
+  border-radius: 50%;
   border: 1px solid #e4e4e4;
-  margin-right: 8px;
 }
 .row__item.male {
   margin-right: 21px;
 }
 .male,
 .female {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
+.label-r {
+  padding-left: 28px;
+}
+.radio:checked ~ .radio__custom {
+  border: 6px solid #007bff;
+}
 .country {
   position: relative;
+}
+.arrow-up,
+.arrow-down {
+  pointer-events: none;
 }
 .arrow-up {
   position: absolute;
@@ -133,7 +152,6 @@ a {
   height: 0;
   top: 40px;
   right: 13.75px;
-
   border-style: solid;
   border-width: 0 5.25px 5.25px 5.25px;
   border-color: transparent transparent #969696 transparent;
@@ -144,7 +162,6 @@ a {
   height: 0;
   top: 50px;
   right: 13.75px;
-
   border-style: solid;
   border-width: 5.25px 5.25px 0 5.25px;
   border-color: #969696 transparent transparent transparent;
@@ -154,6 +171,15 @@ a {
   border-radius: 6px;
   width: 245px;
   height: 38px;
+  padding-left: 10px;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: #545454;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 .country__input::placeholder {
   font-family: "Inter";
@@ -162,10 +188,8 @@ a {
   font-size: 15px;
   line-height: 22px;
   letter-spacing: -0.2px;
-
   color: #545454;
   opacity: 0.5;
-
   padding-left: 10px;
 }
 .country__input:focus ::placeholder {
@@ -181,7 +205,6 @@ a {
   line-height: 18px;
   text-align: center;
   letter-spacing: -0.1px;
-
   color: #969696;
 }
 .footer {
@@ -190,7 +213,6 @@ a {
   align-items: center;
   width: 100%;
   padding: 20px 16px;
-  /* margin-bottom: 16px; */
   border-top: 1px solid #e4e4e4;
 }
 .footer__text {
@@ -198,4 +220,85 @@ a {
 }
 .footer__log-in {
   display: inline-block;
+}
+
+/* PROFILE */
+
+.file-upload {
+  display: flex;
+  justify-content: center;
+}
+.file-upload__box {
+  display: flex;
+}
+.row__item.img-box {
+  margin-right: 20px;
+}
+.file-upload__label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.file-upload__custom-input:hover, .clean__btn:hover{
+  border: 1px solid #257bd6;
+}
+.file-upload__input {
+  width: 138px;
+  height: 30px;
+  opacity: 0;
+  margin-bottom: 9px;
+}
+.file-upload__custom-input {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  min-width: 138px;
+  height: 30px;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.file-upload__custom-input::after {
+  content: "";
+  background-image: url("../assets/images/camera.svg");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  z-index: 6;
+  display: block;  
+}
+.file-upload__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  color: #969696;
+}
+
+.clean__btn {
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+}
+.clean__btn img {
+  width: 16px;
+  height: 16px;
+}
+.profile__button {
+  max-width: 150px;
 }
