@@ -108,8 +108,8 @@ select:focus {
 }
 .radio {
   position: absolute;
-  width: 0;
-  height: 0;
+  /* width: 0;
+  height: 0; */
   opacity: 0;
   margin-right: 8px;
 }
