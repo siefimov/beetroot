@@ -61,7 +61,8 @@ body {
 }
 .page__cards {
   display: flex;
-  column-gap: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 .page__text-description {
   line-height: 1.31;
@@ -133,7 +134,6 @@ body {
   align-items: center;
   margin-bottom: 30px;
 }
-
 .item__content-text {
   margin-bottom: 30px;
 }
