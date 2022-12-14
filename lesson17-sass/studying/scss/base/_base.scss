@@ -3,6 +3,8 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: vars.$primary-color;
+  font-size: vars.$base__fontSize;
+  line-height: vars.$base__lineHeight;
 }
 
 .wrapper {
