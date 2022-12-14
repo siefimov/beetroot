@@ -1,0 +1,21 @@
+@use "vars";
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: vars.$primary-color;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: auto;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
