@@ -1,0 +1,11 @@
+@use '../base/vars';
+
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards__item{
+  color: vars.$primary-color;
+}
