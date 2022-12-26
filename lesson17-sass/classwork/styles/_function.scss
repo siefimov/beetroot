@@ -1,0 +1,5 @@
+@use "sass:math";
+
+@function em($px) {
+  @return $px / $font-base * 1rem;
+}

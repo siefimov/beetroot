@@ -1,0 +1,14 @@
+@mixin flex($row: null, $justify: null) {
+  display: flex;
+  align-items: center;
+  @if $row {
+    flex-direction: row;
+  } @else {
+    flex-direction: column;
+  }
+  @if $justify {
+    justify-content: center;
+  } @else {
+    justify-content: space-between;
+  }
+}

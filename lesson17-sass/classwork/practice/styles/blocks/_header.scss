@@ -1,0 +1,62 @@
+.header {
+  @include flex(true);
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.logo {
+  @include flex(true, true);
+  &__img {
+    margin-right: 12px;
+  }
+  &__name-one {
+    font-family: $primary-font-family;
+    font-weight: 700;
+    font-size: 31.1102px;
+    line-height: 1.2; /* 37/31 */
+    letter-spacing: -0.025em;
+    color: $warning-color;
+  }
+  &__name-two {
+    font-family: $primary-font-family;
+    font-weight: 700;
+    font-size: 31.1102px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: $primary-color;
+  }
+}
+.address {
+  @include flex(true);
+  &__deliver {
+    font-family: $primary-font-family;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    margin-right: 12px;
+  }
+  &__link {
+    @include flex(true);
+  }
+  &__place--bold {
+    font-family: $secondary-font-family;
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(18);
+    line-height: 1.4;
+  }
+}
+
+.location {
+  color: #ffb30e;
+  margin-right: 9px;
+}
+.search-login {
+  @include flex(true);
+  justify-content: flex-end;
+}
+
+.search {
+  @include flex(true);
+}
