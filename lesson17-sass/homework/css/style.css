@@ -135,7 +135,7 @@ body {
 
 /* bounding continer */
 [class*=__container] {
-  width: 1200px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 121px auto;
 }
@@ -157,7 +157,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
@@ -168,7 +168,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 60px;
+  font-size: 3.75rem;
   line-height: 66px;
   text-align: center;
   text-transform: uppercase;
@@ -211,6 +211,7 @@ body {
 
 .slider-team {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 560px;
@@ -304,7 +305,7 @@ body {
 .slider-team__right-text {
   font-family: "Raleway";
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.71; /* 24/14 */
   text-align: center;
   color: #333333;
@@ -312,7 +313,7 @@ body {
 .slider-team__right-link {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
@@ -336,7 +337,7 @@ body {
 .right-header__title {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 1.167; /* 42/36 */
   text-align: center;
   text-transform: capitalize;
@@ -352,7 +353,7 @@ body {
 .right-header__subtitle {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.5; /* 36/24 */
   text-align: center;
   text-transform: capitalize;

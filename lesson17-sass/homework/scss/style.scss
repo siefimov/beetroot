@@ -1,9 +1,10 @@
-@use "./base/reset";
+@import "./base/reset";
 
-@use "./base/vars";
-@use "./base/base";
-@use "./base/mixins";
+@import "./base/vars";
+@import "./base/base";
+@import "./base/mixins";
+@import "./base/function";
 
 // components
-@use "./components/header";
-@use "./components/slider";
+@import "./components/header";
+@import "./components/slider";
