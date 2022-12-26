@@ -1,3 +1,8 @@
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: $primary-font-family;
   color: $grey-color;
@@ -14,6 +19,7 @@ body {
 /* bounding continer */
 [class*="__container"] {
   max-width: $width-container;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
   @include flex(true);

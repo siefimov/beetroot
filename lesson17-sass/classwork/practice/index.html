@@ -29,21 +29,74 @@
           </div>
           <div class="search-login">
             <div class="header__search search">
-              <div class="search__icon">
+              <button class="search__icon" type="submit">
                 <i class="fa-solid fa-search"></i>
+              </button>
+              <!-- <label for="search">Search Food</label> -->
+              <input
+                class="search__text"
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Search Food"
+              />
+            </div>
+
+            <button class="header__login login-button" type="submit">
+              <div class="login-button__icon">
+                <i class="fa-solid fa-user"></i>
               </div>
-              <label for="search">Search Food</label>
-              <input class="search__text" type="search" name="search" id="search" />
-            </div>
-  
-            <div class="header__login login">
-              <div class="login__icon"></div>
-              <div class="login__text">Login</div>
-            </div>
+              <div class="login-button__text">Login</div>
+            </button>
           </div>
         </div>
       </header>
-      <main class="page">main</main>
+      <main class="page">
+        <div class="find-food">
+          <div class="find-food__container">
+            <div class="find-food__order-card card-order">
+              <div class="card-order__content">
+                <h2 class="card-order__title">Are you starving?</h2>
+                <p class="card-order__text">
+                  Within a few clicks, find meals that are accessible near you
+                </p>
+              </div>
+              <form class="card-order__form">
+                <fieldset class="card-order__form-top top-form">
+                  <button class="top-form__delivery" type="submit">
+                    <i class="fa-solid fa-motorcycle"></i>
+                    Delivery
+                  </button>
+                  <button class="top-form__pickup" type="submit">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    Pickup
+                  </button>
+                </fieldset>
+                <fieldset class="card-order__form-bottom bottom-form">
+                  <div class="bottom-form__input-box">
+                    <i class="fa-solid fa-location-dot bottom-form__location-dot"></i>
+                    <input
+                      class="bottom-form__input"
+                      type="text"
+                      placeholder="Enter Your Address"
+                    />
+                  </div>
+                  <button class="bottom-form__button" type="submit">
+                    <i class="fa-solid fa-search bottom-form__button-icon"></i>
+                    Find Food
+                  </button>
+                </fieldset>
+              </form>
+            </div>
+            <div class="find-food__img-box">
+              <img class="find-food__img-item" src="./assets/images/image-base.png" alt="image" />
+            </div>
+            <div class="find-food__img-ellipse1"></div>
+            <div class="find-food__img-ellipse2"></div>
+          </div>
+        </div>
+        <div class="flash-deals"></div>
+      </main>
       <footer class="footer">footer</footer>
     </div>
   </body>
