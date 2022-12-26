@@ -1,0 +1,215 @@
+/* -------------------- */
+/* --- RESET STYLES --- */
+/* -------------------- */
+@import url("./reset.css");
+/* -------------------- */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #16133d;
+}
+
+/* -------------------- */
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+}
+/* -------------------- */
+/* обмежуючий контейнер */
+[class*="__container"] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+/* -------------------- */
+.page {
+  flex: 1 1 auto;
+}
+/* -------------------- */
+/* ------ HEADER ------ */
+/* -------------------- */
+.header {
+  border: 1px solid #efeef3;
+  margin-bottom: 100px;
+}
+.header__container {
+  display: flex;
+  min-height: 80px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo__img {
+  margin-right: 13px;
+}
+.logo__name {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 1;
+}
+
+/* -------------------- */
+/* ------ MAIN ------ */
+/* -------------------- */
+.page {
+  margin-bottom: 100px;
+}
+.page__cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.page__text-description {
+  line-height: 1.31;
+  color: #7690a8;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.page__text-title {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.3;
+  letter-spacing: 0.2px;
+  margin-bottom: 40px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 370px;
+  max-height: 340px;
+  padding: 40px;
+  border: 1px solid rgba(21, 101, 216, 0.1);
+  border-radius: 8px;
+  transition: border 0.2s ease-in-out;
+}
+.item:hover {
+  border: 1px solid #3db370;
+  transition: border 0.2s ease-in-out;
+  cursor: pointer;
+}
+.item:hover .item__content-img {
+  border: 1px solid rgba(61, 179, 112, 0.1);
+}
+.icon-path-1,
+.icon-path-2,
+.icon-path-3,
+.icon-path-4 {
+  transition: fill 0.2s ease-in-out;
+}
+.item:hover .icon-path-1 {
+  fill: #52c29d;
+  transition: fill 0.2s ease-in-out;
+}
+.item:hover .icon-path-2 {
+  fill: #caeff2;
+  transition: fill 0.2s ease-in-out;
+}
+.item:hover .icon-path-3 {
+  fill: #f4feff;
+  transition: fill 0.2s ease-in-out;
+}
+.item:hover .icon-path-4 {
+  fill: #e1f4f5;
+  transition: fill 0.2s ease-in-out;
+}
+.item__content {
+  display: flex;
+  flex-direction: column;
+}
+.item__content-img {
+  width: 64px;
+  height: 64px;
+  border: 1px solid rgba(21, 101, 216, 0.1);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.item__content-text {
+  margin-bottom: 30px;
+}
+.item__content-title {
+  font-size: 24px;
+  line-height: 21px;
+  letter-spacing: 0.2px;
+  margin-bottom: 15px;
+}
+.item__content-description {
+  line-height: 28px;
+}
+.item__content-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3db370;
+}
+
+/* -------------------- */
+/* ------ FOOTER ------ */
+/* -------------------- */
+.footer {
+  background-color: #16133d;
+}
+.footer__container {
+  min-height: 193px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer__logo {
+  margin-bottom: 40px;
+}
+.footer__logo > .logo__name {
+  color: #ffffff;
+}
+.socials {
+  display: flex;
+  column-gap: 10px;
+}
+.socials__icon {
+  width: 38px;
+  height: 38px;
+  background-color: #efeef3;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.instagram {
+  width: 21px;
+  height: 21px;
+}
+.facebook {
+  width: 10px;
+  height: 19px;
+}
+.github {
+  width: 20px;
+  height: 20px;
+}
+.dribble {
+  width: 20px;
+  height: 20px;
+}
+.twitter {
+  width: 20px;
+  height: 17px;
+}
+.s-icon {
+  fill: #0d0d0d;
+  transition: fill 0.2s ease-in-out;
+}
+.socials__icon:hover .s-icon {
+  fill: #3db370;
+  cursor: pointer;
+  transition: fill 0.2s ease-in-out;
+}
