@@ -1,0 +1,52 @@
+.description {
+  color: pink;
+}
+@media (max-width: 1024px) {
+  .description {
+    color: red;
+  }
+}
+@media (max-width: 768px) {
+  .description {
+    color: blue;
+  }
+}
+
+.desktop-menu {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+}
+
+.desktop {
+  display: block;
+  color: yellow;
+}
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+}
+
+.mobile {
+  display: none;
+  color: grey;
+}
+@media (max-width: 768px) {
+  .mobile {
+    display: block;
+  }
+}
+
+#main-container {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+/*# sourceMappingURL=index.css.map */

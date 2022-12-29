@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>RWD</title>
+  </head>
+  <body>
+    <div id="main-container">
+      <a href="javascript:void(0);" class="icon" onclick="themeChange()">
+        <i class="fab fa-facebook-messenger"></i>
+      </a>
+
+      <h1 class="description">description</h1>
+      <div class="desktop-menu" id="myLinks">
+        <span>Home</span>
+        <span>About</span>
+        <span>Works</span>
+        <span>blOG</span>
+        <span>Contact</span>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <!-- <h2 class="mobile">Summer</h2> -->
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+      // =====
+      function themeChange() {
+        var x = document.getElementById("main-container");
+        if (x.style.backgroundColor === "grey") {
+          x.style.backgroundColor = "white";
+        } else {
+          x.style.backgroundColor = "grey";
+        }
+      }
+    </script>
+  </body>
+</html>
