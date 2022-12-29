@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  width:600px;
+  margin: 0 auto;
+}
+.block {
+  padding: 40px 30px;
+  background-color: beige;
+  font-weight: 500;
+  font-size: 16px;
+  border: 1px solid black;
+  transition: all 0.5s ease-in-out;
+}
+.block:hover{
+  background-color: aqua;
+  transition: all 0.5s ease-in-out;
+  /* transform: rotate(360deg);
+ 
+  transform-origin: center center; */
+  /* transform: translate(50px, 70px); */
+  transform: rotateX(-180deg);
+
+}
