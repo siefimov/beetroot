@@ -1,0 +1,59 @@
+/* -------------------- */
+/* --- BASE STYLES --- */
+/* -------------------- */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+}
+
+body {
+  font-family: $ff-base;
+  font-size: $fs-base;
+  line-height: $lh-base;
+  color: $color-base;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+}
+/* bounding continer */
+[class*="__container"] {
+  max-width: $width-container;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (max-width: 768px) {
+  [class*="__container"] {
+    max-width: 768px;
+    padding: 0 34px;
+  }
+}
+@media (max-width: 320px) {
+  [class*="__container"] {
+    max-width: 320px;
+    padding: 0 10px;
+  }
+}
+.page {
+  flex: 1 1 auto;
+}
+.title-h2 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  font-size: rem(48);
+  line-height: 1.33333333; /* 64/48 */
+  letter-spacing: 0.05em;
+}
+.title-h4 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: rem(23);
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+}
