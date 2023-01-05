@@ -54,6 +54,9 @@
 
     position: relative;
   }
+  &__link:active{
+    text-decoration: none;
+  }
   &__link:active::after {
     content: "";
     width: 70%;

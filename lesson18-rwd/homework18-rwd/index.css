@@ -148,6 +148,14 @@ body {
   color: #000000;
 }
 
+a:hover {
+  color: #000000;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -192,6 +200,45 @@ body {
   font-size: 1.4375rem;
   line-height: 1.66;
   letter-spacing: 0.1em;
+}
+
+.title-h4 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 1.4375rem;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.read-more__text {
+  display: none;
+  width: 0%;
+  transition: width 1.5s ease 0.2s;
+  margin-right: 8px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.663;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+.read-more:hover .read-more__text {
+  display: inline;
+  width: 100%;
+  transition: width 1.5s ease 0.2s;
+}
+.read-more:hover .read-more__arrow {
+  fill: #000000;
+}
+.read-more:active {
+  text-decoration: none;
 }
 
 /*--------------------------*/
@@ -242,6 +289,9 @@ body {
   margin-bottom: 5px;
   transition: color 0.3s ease-in-out;
   position: relative;
+}
+.menu__link:active {
+  text-decoration: none;
 }
 .menu__link:active::after {
   content: "";
@@ -352,6 +402,10 @@ body {
     margin-right: 20px;
   }
 }
+.page__first-screen {
+  margin-bottom: 90px;
+}
+
 .first-screen {
   min-width: 1440px;
   min-height: 600px;
@@ -414,6 +468,64 @@ body {
   .first-screen__title {
     font-size: 1.875rem;
   }
+}
+.blog__title {
+  margin-bottom: 50px;
+}
+.blog__article-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.blog__article {
+  display: flex;
+  column-gap: 30px;
+}
+
+.article {
+  max-height: 470px;
+}
+.article div {
+  flex-basis: 50%;
+}
+.article:last-child {
+  flex-direction: row-reverse;
+}
+.article__info {
+  padding: 85px 120px 85px 0px;
+}
+.article__info--second {
+  padding: 85px 0 85px 120px;
+}
+.article__info-tag {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  font-family: "Lato", sans-serif;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: #7b7b7b;
+}
+.article__info-tag01 {
+  margin-right: 10px;
+}
+.article__info-title {
+  margin-bottom: 15px;
+}
+.article__info-date {
+  font-family: "Lato", sans-serif;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: #7b7b7b;
+  margin-bottom: 50px;
+}
+.article__info-text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.66;
+  letter-spacing: 0.05em;
+  color: #565656;
 }
 
 /*# sourceMappingURL=index.css.map */

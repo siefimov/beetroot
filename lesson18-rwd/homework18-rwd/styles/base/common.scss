@@ -15,7 +15,12 @@ body {
   line-height: $lh-base;
   color: $color-base;
 }
-
+a:hover {
+  color: $color-base;
+}
+a:active {
+  text-decoration: underline;
+}
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -56,4 +61,46 @@ body {
   font-size: rem(23);
   line-height: 1.66;
   letter-spacing: 0.1em;
+}
+
+.title-h4 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: rem(23);
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 15px;
+  cursor: pointer;
+  &__text {
+    display: none;
+    width: 0%;
+    transition: width 1.5s ease 0.2s;
+
+    margin-right: 8px;
+
+    font-family: $ff-base;
+    font-weight: $fw-base;
+    font-size: $fs-base;
+    line-height: 1.663;
+    letter-spacing: 0.1em;
+    color: $color-base;
+  }
+  &:hover &__text {
+    display: inline;
+    width: 100%;
+    transition: width 1.5s ease 0.2s;
+  }
+  &:hover &__arrow {
+    fill: $color-base;
+  }
+  &:active {
+    text-decoration: none;
+  }
+  
 }
