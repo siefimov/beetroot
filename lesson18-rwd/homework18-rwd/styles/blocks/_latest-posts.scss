@@ -1,0 +1,12 @@
+.latest-posts {
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 370px;
+  }
+}

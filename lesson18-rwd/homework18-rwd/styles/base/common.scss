@@ -47,6 +47,9 @@ a:active {
 }
 .page {
   flex: 1 1 auto;
+  &__blog, &__latest-posts{
+    margin-bottom: 90px;
+  }
 }
 .title-h2 {
   font-family: "Red Hat Display", sans-serif;

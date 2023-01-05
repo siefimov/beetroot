@@ -120,17 +120,6 @@ legend {
 /* ------------------------ */
 /* ------ colors ------- */
 /* ------------------------ */
-/* primary brand color - skyblue - with shades and tints via Sass functions */
-/* secondary brand color - hotpink - with shades and tints via Sass functions */
-/* ------------------------ */
-/* ------ font size ------- */
-/* ------------------------ */
-/* larger than heading font sizes */
-/* heading font sizes */
-/* smaller than heading font sizes */
-/* ------------------------ */
-/* ------ font family ------- */
-/* ------------------------ */
 /* -------------------- */
 /* --- BASE STYLES --- */
 /* -------------------- */
@@ -184,6 +173,9 @@ a:active {
 }
 .page {
   flex: 1 1 auto;
+}
+.page__blog, .page__latest-posts {
+  margin-bottom: 90px;
 }
 
 .title-h2 {
@@ -581,6 +573,16 @@ a:active {
   .article__info-date {
     margin-bottom: 40px;
   }
+}
+.latest-posts__row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.latest-posts__item {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 370px;
 }
 
 /*# sourceMappingURL=index.css.map */
