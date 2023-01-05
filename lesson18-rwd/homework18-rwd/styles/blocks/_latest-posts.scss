@@ -1,12 +1,62 @@
 .latest-posts {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  &__title {
+  }
   &__row {
     display: flex;
     justify-content: space-between;
     column-gap: 30px;
   }
-  &__item{
+  &__item {
     display: flex;
     flex-direction: column;
     flex: 1 1 370px;
   }
+  &__img-box {
+    margin-bottom: 25px;
+  }
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    font-family: $ff-base;
+    font-weight: $fw-base;
+    font-size: rem(12);
+    line-height: 1.66;
+    letter-spacing: 0.1em;
+    color: $light-grey;
+  }
+  &__description-title {
+    margin-bottom: 20px;
+  }
+  &__description-text {
+    font-family: $ff-base;
+    font-weight: $fw-base;
+    font-size: $fs-base;
+    line-height: 1.66;
+    letter-spacing: 0.05em;
+    color: $grey;
+  }
+}
+
+.view-all__text {
+  line-height: 1.663;
+  letter-spacing: 0.1em;
+  color: $light-grey;
+  margin-right: 8px;
+}
+.view-all__text:hover {
+  color: $color-base;
+}
+.view-all:hover path.read-more__arrow {
+  fill: $color-base;
+}
+.view-all:active {
+  text-decoration: none;
 }
