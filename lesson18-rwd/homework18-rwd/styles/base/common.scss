@@ -62,7 +62,14 @@ a:active {
   line-height: 1.66;
   letter-spacing: 0.1em;
 }
-
+.title-h3 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  font-size: rem(28);
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: $color-base;
+}
 .title-h4 {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 500;
@@ -102,5 +109,4 @@ a:active {
   &:active {
     text-decoration: none;
   }
-  
 }

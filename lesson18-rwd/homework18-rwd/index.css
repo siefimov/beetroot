@@ -202,6 +202,15 @@ a:active {
   letter-spacing: 0.1em;
 }
 
+.title-h3 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
 .title-h4 {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 500;
@@ -469,6 +478,10 @@ a:active {
     font-size: 1.875rem;
   }
 }
+.blog__container {
+  display: flex;
+  flex-direction: column;
+}
 .blog__title {
   margin-bottom: 50px;
 }
@@ -526,6 +539,48 @@ a:active {
   line-height: 1.66;
   letter-spacing: 0.05em;
   color: #565656;
+}
+
+@media (max-width: 1055px) {
+  .blog__article {
+    column-gap: 20px;
+  }
+  .article__info {
+    padding: 0;
+    max-width: 340px;
+  }
+  .article__info-date {
+    margin-bottom: 30px;
+  }
+  .text-for-desktop {
+    display: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .page__first-screen {
+    margin-bottom: 70px;
+  }
+  .blog__article {
+    flex-direction: column-reverse;
+  }
+  .article {
+    max-height: unset;
+  }
+  .article__info {
+    margin-bottom: 37px;
+  }
+  .article:last-child {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 320px) {
+  .article__info-title {
+    font-size: 1.375rem;
+    margin-bottom: 10px;
+  }
+  .article__info-date {
+    margin-bottom: 40px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
