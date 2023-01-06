@@ -1,0 +1,115 @@
+/* -------------------- */
+/* --- BASE STYLES --- */
+/* -------------------- */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+}
+
+body {
+  font-family: $ff-base;
+  font-size: $fs-base;
+  line-height: $lh-base;
+  color: $color-base;
+}
+a:hover {
+  color: $color-base;
+}
+a:active {
+  text-decoration: underline;
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+}
+/* bounding continer */
+[class*="__container"] {
+  max-width: $width-container;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (max-width: 768px) {
+  [class*="__container"] {
+    max-width: 768px;
+    padding: 0 34px;
+  }
+}
+@media (max-width: 320px) {
+  [class*="__container"] {
+    max-width: 320px;
+    padding: 0 10px;
+  }
+}
+.page {
+  flex: 1 1 auto;
+  &__blog, &__latest-posts{
+    margin-bottom: 90px;
+  }
+}
+.title-h2 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  font-size: rem(48);
+  line-height: 1.33333333; /* 64/48 */
+  letter-spacing: 0.05em;
+}
+.title-h4 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: rem(23);
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+}
+.title-h3 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  font-size: rem(28);
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: $color-base;
+}
+.title-h4 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: rem(23);
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 15px;
+  cursor: pointer;
+  &__text {
+    display: none;
+    width: 0%;
+    transition: width 1.5s ease 0.2s;
+
+    margin-right: 8px;
+
+    font-family: $ff-base;
+    font-weight: $fw-base;
+    font-size: $fs-base;
+    line-height: 1.663;
+    letter-spacing: 0.1em;
+    color: $color-base;
+  }
+  &:hover &__text {
+    display: inline;
+    width: 100%;
+    transition: width 1.5s ease 0.2s;
+  }
+  &:hover &__arrow {
+    fill: $color-base;
+  }
+  &:active {
+    text-decoration: none;
+  }
+}
