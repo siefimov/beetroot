@@ -699,5 +699,57 @@ a:active {
     justify-content: flex-end;
   }
 }
+.popular__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.popular__row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.popular__item {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 370px;
+}
+.popular__img-box {
+  margin-bottom: 25px;
+}
+.popular__head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: #7b7b7b;
+}
+.popular__description-title {
+  margin-bottom: 20px;
+}
+.popular__description-text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.66;
+  letter-spacing: 0.05em;
+  color: #565656;
+}
+
+@media (max-width: 500px) {
+  .popular__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .popular__row {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */
