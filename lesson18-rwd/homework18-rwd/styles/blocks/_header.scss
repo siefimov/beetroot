@@ -15,8 +15,7 @@
     flex: 1 1 auto;
     margin-right: 84px;
   }
-  &__logo,
-  &__search {
+  &__logo {
     display: flex;
     align-items: center;
   }
@@ -29,6 +28,7 @@
     row-gap: 3px;
     align-items: center;
     justify-content: flex-end;
+    transition: 0.8s;
   }
   &__item {
     display: flex;
@@ -73,6 +73,8 @@
     bottom: -5px;
   }
 }
+
+/*
 .search {
   position: relative;
   &__input {
@@ -85,6 +87,7 @@
     align-items: center;
   }
 }
+*/
 /*--------------------------*/
 /*----------burger----------*/
 /*--------------------------*/

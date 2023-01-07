@@ -6,3 +6,15 @@ navBtn.addEventListener("click", () => {
   mobileNav.classList.toggle("header__menu--mobile");
   navBtn.classList.toggle("burger__close");
 });
+
+// ---
+const menuList = document.querySelector('.menu__list');
+const searchBox = document.querySelector('.search-box');
+
+searchBox.addEventListener("mouseover", ()=>{
+  menuList.style.opacity = 0;
+})
+searchBox.addEventListener("mouseout", ()=>{
+  menuList.style.opacity = 1;
+})
+

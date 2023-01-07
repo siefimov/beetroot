@@ -189,6 +189,54 @@ a:active {
   }
 }
 
+/*-------------------------------*/
+/*-----------search bar ---------*/
+/*-------------------------------*/
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  padding: 5px 0 2px 2px;
+  height: 20px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.search-box:hover {
+  display: flex;
+  border-bottom: 1px solid lightslategrey;
+}
+
+.search-box:hover input {
+  width: 184px;
+}
+
+.search-box input {
+  width: 0;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  transition: 0.8s;
+  background: transparent;
+}
+
+.search-box button {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.search-box button .fas {
+  font-size: 16px;
+}
+
+/*----------------------------*/
 .title-h2 {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 400;
@@ -230,6 +278,11 @@ a:active {
   max-width: 130px;
   margin-left: 15px;
   cursor: pointer;
+}
+@media (max-width: 1055px) {
+  .read-more {
+    margin-left: 0;
+  }
 }
 .read-more__text {
   display: none;
@@ -350,7 +403,7 @@ a:active {
   flex: 1 1 auto;
   margin-right: 84px;
 }
-.header__logo, .header__search {
+.header__logo {
   display: flex;
   align-items: center;
 }
@@ -361,6 +414,7 @@ a:active {
   row-gap: 3px;
   align-items: center;
   justify-content: flex-end;
+  transition: 0.8s;
 }
 .menu__item {
   display: flex;
@@ -403,18 +457,20 @@ a:active {
   bottom: -5px;
 }
 
+/*
 .search {
   position: relative;
+  &__input {
+    display: none;
+    // position: absolute;
+    border-bottom: $color-base;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+  }
 }
-.search__input {
-  display: none;
-  border-bottom: #000000;
-}
-.search__btn {
-  display: flex;
-  align-items: center;
-}
-
+*/
 /*--------------------------*/
 /*----------burger----------*/
 /*--------------------------*/
@@ -644,6 +700,10 @@ a:active {
   }
   .article__info-date {
     margin-bottom: 30px;
+  }
+  .article__info-text {
+    display: flex;
+    flex-direction: column;
   }
   .text-for-desktop {
     display: none;

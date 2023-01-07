@@ -77,6 +77,10 @@
     &__info-date {
       margin-bottom: 30px;
     }
+    &__info-text{
+      display: flex;
+      flex-direction: column;
+    }
   }
   .text-for-desktop {
     display: none;

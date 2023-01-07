@@ -64,6 +64,49 @@ a:active {
     margin-bottom: 70px;
   }
 }
+
+/*-------------------------------*/
+/*-----------search bar ---------*/
+/*-------------------------------*/
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  padding: 5px 0 2px 2px;
+  height: 20px;
+  cursor: pointer;
+  background-color: #fff;
+}
+.search-box:hover {
+  display: flex;
+  border-bottom: 1px solid lightslategrey;
+}
+.search-box:hover input {
+  width: 184px;
+}
+.search-box input {
+  width: 0;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  transition: 0.8s;
+  background: transparent;
+}
+.search-box button {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.search-box button .fas {
+  font-size: 16px;
+}
+/*----------------------------*/
+
 .title-h2 {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 400;
@@ -102,6 +145,9 @@ a:active {
   max-width: 130px;
   margin-left: 15px;
   cursor: pointer;
+  @media (max-width:1055px){
+      margin-left: 0;
+  }
   &__text {
     display: none;
     width: 0%;
@@ -201,4 +247,5 @@ a:active {
   .socials__box:not(:last-child) {
     margin-right: 23px;
   }
+  
 }
