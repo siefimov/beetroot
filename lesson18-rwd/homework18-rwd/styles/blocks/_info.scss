@@ -1,0 +1,68 @@
+.info {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    & div {
+      max-width: 470px;
+    }
+  }
+  &__title-box {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: $fw-base;
+    font-size: rem(23);
+    line-height: 1.66;
+    letter-spacing: 0.1em;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  &__read-more {
+    margin-left: unset;
+    display: flex;
+    justify-content: start;
+  }
+  &__text-box {
+    font-family: $ff-base;
+    font-weight: 400;
+    font-size: rem(19);
+    line-height: calc(32 / 19);
+    letter-spacing: 0.05em;
+    color: $grey;
+  }
+  &__text-01 {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info {
+    &__container {
+      flex-direction: column;
+      & div {
+        max-width: unset;
+      }
+    }
+    &__title-box {
+      margin-bottom: 50px;
+    }
+    &__text-box {
+      align-self: flex-end;
+      text-align: end;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .info {
+    &__title-box {
+      margin-bottom: 35px;
+    }
+    &__text-box {
+      font-size: rem(18);
+      text-align: left;
+    }
+  }
+}
