@@ -47,8 +47,17 @@ a:active {
 }
 .page {
   flex: 1 1 auto;
-  &__blog, &__latest-posts{
+  &__blog,
+  &__latest-posts,
+  &__popular {
     margin-bottom: 90px;
+  }
+  @media (max-width:768px){
+    &__blog,
+    &__latest-posts,
+    &__popular {
+      margin-bottom: 70px;
+    }
   }
 }
 .title-h2 {
@@ -111,5 +120,29 @@ a:active {
   }
   &:active {
     text-decoration: none;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  color: $white;
+  &__link {
+    font-family: $ff-base;
+    font-weight: 700;
+    font-size: $fs-base;
+    line-height: 1.66;
+    letter-spacing: 0.1em;
+    background-color: $grey;
+    padding: 9.5px 45px;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: #323232;
+      color: $white;
+      transition: background-color 0.3s ease;
+    }
+    &:active {
+      text-decoration: none;
+    }
   }
 }

@@ -174,8 +174,13 @@ a:active {
 .page {
   flex: 1 1 auto;
 }
-.page__blog, .page__latest-posts {
+.page__blog, .page__latest-posts, .page__popular {
   margin-bottom: 90px;
+}
+@media (max-width: 768px) {
+  .page__blog, .page__latest-posts, .page__popular {
+    margin-bottom: 70px;
+  }
 }
 
 .title-h2 {
@@ -239,6 +244,30 @@ a:active {
   fill: #000000;
 }
 .read-more:active {
+  text-decoration: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
+.button__link {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  background-color: #565656;
+  padding: 9.5px 45px;
+  transition: background-color 0.3s ease;
+}
+.button__link:hover {
+  background-color: #323232;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+.button__link:active {
   text-decoration: none;
 }
 
@@ -709,6 +738,7 @@ a:active {
   display: flex;
   justify-content: space-between;
   column-gap: 30px;
+  margin-bottom: 50px;
 }
 .popular__item {
   display: flex;

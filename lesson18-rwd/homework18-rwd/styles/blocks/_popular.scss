@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     column-gap: 30px;
+    margin-bottom: 50px;
   }
   &__item {
     display: flex;
@@ -44,12 +45,12 @@
 }
 
 @media (max-width: 500px) {
-  .popular{
-    &__header{
+  .popular {
+    &__header {
       flex-direction: column;
       align-items: flex-start;
     }
-    &__row{
+    &__row {
       flex-direction: column;
       row-gap: 50px;
     }
