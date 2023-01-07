@@ -7,7 +7,7 @@ navBtn.addEventListener("click", () => {
   navBtn.classList.toggle("burger__close");
 });
 
-// ---
+// search bar
 const menuList = document.querySelector('.menu__list');
 const searchBox = document.querySelector('.search-box');
 
