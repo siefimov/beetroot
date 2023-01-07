@@ -2,7 +2,7 @@
   margin-bottom: 90px;
 }
 .first-screen {
-  min-width: 1440px;
+  // min-width: 1440px;
   min-height: 600px;
   background: url("./assets/images/bg-image.jpg") no-repeat;
   background-size: cover;
@@ -13,7 +13,7 @@
   }
   &__content {
     padding-top: 100px;
-    max-width: 770px;
+    // max-width: 770px;
     min-height: auto;
     width: 100%;
   }
@@ -24,7 +24,7 @@
     line-height: 1.36; /* 64/47 */
     letter-spacing: 0.05em;
     width: 100%;
-    display: inline-block;
+    display: flex;
   }
 }
 /*--------------------------*/

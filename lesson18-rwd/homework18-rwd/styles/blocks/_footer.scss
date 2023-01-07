@@ -12,6 +12,10 @@
   &__socials {
     align-self: center;
   }
+  &__copyright{
+    display: flex;
+    justify-content: center;
+  }
   &__copyright-text {
     text-align: center;
   }
