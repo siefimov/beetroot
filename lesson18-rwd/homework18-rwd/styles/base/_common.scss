@@ -47,17 +47,21 @@ a:active {
 }
 .page {
   flex: 1 1 auto;
+  margin-bottom: 106px;
   &__blog,
   &__latest-posts,
   &__popular {
     margin-bottom: 90px;
   }
-  @media (max-width:768px){
+  @media (max-width: 768px) {
     &__blog,
     &__latest-posts,
     &__popular {
       margin-bottom: 70px;
     }
+  }
+  @media (max-width: 320px) {
+    margin-bottom: 70px;
   }
 }
 .title-h2 {
@@ -94,6 +98,8 @@ a:active {
 .read-more {
   display: inline-flex;
   align-items: center;
+  justify-content: flex-start;
+  max-width: 130px;
   margin-left: 15px;
   cursor: pointer;
   &__text {
@@ -111,7 +117,9 @@ a:active {
     color: $color-base;
   }
   &:hover &__text {
-    display: inline;
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 0 1 auto;
     width: 100%;
     transition: width 1.5s ease 0.2s;
   }
@@ -144,5 +152,53 @@ a:active {
     &:active {
       text-decoration: none;
     }
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  @media (max-width: 768px) {
+    align-items: center;
+  }
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  &__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    // padding: 10px;
+    border: 1px solid $grey;
+    margin-right: 23px;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: $grey;
+      transition: background-color 0.3s ease;
+    }
+    @media (max-width: 768px) {
+      margin-right: unset;
+    }
+  }
+  &__icon {
+    color: $grey;
+    font-size: rem(24);
+  }
+  &__box:hover &__icon {
+    color: $white;
+    transition: color 0.3s ease;
+  }
+}
+@media (max-width: 768px) {
+  .socials__box:not(:last-child) {
+    margin-right: 23px;
   }
 }
