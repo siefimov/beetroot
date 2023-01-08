@@ -457,20 +457,6 @@ a:active {
   bottom: -5px;
 }
 
-/*
-.search {
-  position: relative;
-  &__input {
-    display: none;
-    // position: absolute;
-    border-bottom: $color-base;
-  }
-  &__btn {
-    display: flex;
-    align-items: center;
-  }
-}
-*/
 /*--------------------------*/
 /*----------burger----------*/
 /*--------------------------*/
