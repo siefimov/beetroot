@@ -1,0 +1,214 @@
+/* -------------------- */
+/* --- BASE STYLES --- */
+/* -------------------- */
+
+// html,
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-size: 100%;
+}
+
+body {
+  font-family: $ff-base;
+  font-size: $fs-base;
+  line-height: $lh-base;
+  color: $gray-dark;
+}
+svg {
+  max-width: unset;
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  overflow: clip;
+}
+/* bounding continer */
+[class*="__container"] {
+  max-width: $width-container;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.s-icon {
+  fill: $gray-dark;
+  margin-right: 20px;
+  transition: fill 0.2s ease-in-out;
+}
+
+.social-icon:hover .s-icon {
+  fill: pink;
+  cursor: pointer;
+  transition: fill 0.2s ease-in-out;
+}
+
+/*-----------*/
+.sidebar {
+  width: 220px;
+  height: 100%;
+  padding: 30px 0px;
+  background: $white;
+  transition: $tran-05;
+  z-index: 100;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar.close {
+  width: 86px;
+}
+.menu-name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $gray-middle;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.menu-name,
+.nav-link {
+  padding: 0 10px;
+  transition: $tran-05;
+}
+
+/* ======= reusable code ====== */
+.sidebar li {
+  height: 46px;
+}
+.sidebar li a {
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+  height: 100%;
+  background-color: transparent;
+
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  transition: $tran-03;
+}
+.sidebar li:hover {
+  background-color: $putple-light;
+  transition: $tran-05;
+}
+
+.sidebar li a:hover .text {
+  color: $white;
+}
+
+.sidebar li a:hover .s-icon {
+  fill: $white;
+}
+.sidebar .s-icon {
+  min-width: 26px;
+  height: 100%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar .text,
+.sidebar .s-icon {
+  color: $gray-dark;
+  transition: $tran-03;
+}
+
+.sidebar .text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  white-space: nowrap;
+  opacity: 1;
+}
+
+.sidebar.close .logo-bar__logo-name,
+.sidebar.close .text {
+  opacity: 0;
+  transition: $tran-02;
+}
+
+// ===========
+
+.sidebar header {
+  position: relative;
+}
+
+.logo-bar {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  transition: $tran-05;
+}
+
+.logo-bar__logo-img {
+  margin-right: 7px;
+}
+.logo-bar__logo-name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem(18);
+  line-height: calc(22 / 18);
+  color: $purple-dark;
+  cursor: pointer;
+}
+
+.menu-links {
+  margin-bottom: 30px;
+}
+
+/*==========toggle===============*/
+.sidebar header .toggle {
+  position: absolute;
+  top: 43%;
+  right: 15px;
+  transform: translateY(-43%) rotate(180deg);
+  transform-origin: center;
+  background-color: $white;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: $tran-05;
+}
+
+body.dark .sidebar header .toggle {
+  color: $text-color;
+}
+.sidebar.close .toggle {
+  transform: translateY(-43%) rotate(0deg);
+  right: -35px;
+  background: transparent;
+  transition: $tran-05;
+}
+.sidebar.close .nav-link {
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: $tran-05;
+}
+.sidebar.close .logo-bar {
+  padding-left: 27px;
+  padding-right: 27px;
+  transition: $tran-05;
+}
+.sidebar.close .menu-name {
+  opacity: 0;
+  transition: $tran-05;
+}
+.sidebar .menu {
+  margin-top: 40px;
+}
+
+
+// 
+.quick-panel .menu-links{
+  display: flex;
+}

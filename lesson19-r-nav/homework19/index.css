@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"); /* -------------------- */
+/* --- RESET STYLES --- */
+/* -------------------- */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+  /*display: inline-block;*/
+}
+
+a:hover {
+  /* color: inherit; */
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+/* base styles */
+/* ------------------------ */
+/* ------ colors ------- */
+/* ------------------------ */
+/* ====== Transition ====== */
+/* -------------------- */
+/* --- BASE STYLES --- */
+/* -------------------- */
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-size: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #4f4f4f;
+}
+
+svg {
+  max-width: unset;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  overflow: clip;
+}
+
+/* bounding continer */
+[class*=__container] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.s-icon {
+  fill: #4f4f4f;
+  margin-right: 20px;
+  transition: fill 0.2s ease-in-out;
+}
+
+.social-icon:hover .s-icon {
+  fill: pink;
+  cursor: pointer;
+  transition: fill 0.2s ease-in-out;
+}
+
+/*-----------*/
+.sidebar {
+  width: 220px;
+  height: 100%;
+  padding: 30px 0px;
+  background: #ffffff;
+  transition: all 0.5s ease;
+  z-index: 100;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar.close {
+  width: 86px;
+}
+
+.menu-name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #828282;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.menu-name,
+.nav-link {
+  padding: 0 10px;
+  transition: all 0.5s ease;
+}
+
+/* ======= reusable code ====== */
+.sidebar li {
+  height: 46px;
+}
+
+.sidebar li a {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.sidebar li:hover {
+  background-color: #9e8cfc;
+  transition: all 0.5s ease;
+}
+
+.sidebar li a:hover .text {
+  color: #ffffff;
+}
+
+.sidebar li a:hover .s-icon {
+  fill: #ffffff;
+}
+
+.sidebar .s-icon {
+  min-width: 26px;
+  height: 100%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar .text,
+.sidebar .s-icon {
+  color: #4f4f4f;
+  transition: all 0.3s ease;
+}
+
+.sidebar .text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  white-space: nowrap;
+  opacity: 1;
+}
+
+.sidebar.close .logo-bar__logo-name,
+.sidebar.close .text {
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.sidebar header {
+  position: relative;
+}
+
+.logo-bar {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  transition: all 0.5s ease;
+}
+
+.logo-bar__logo-img {
+  margin-right: 7px;
+}
+
+.logo-bar__logo-name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.2222222222;
+  color: #392c72;
+  cursor: pointer;
+}
+
+.menu-links {
+  margin-bottom: 30px;
+}
+
+/*==========toggle===============*/
+.sidebar header .toggle {
+  position: absolute;
+  top: 43%;
+  right: 15px;
+  transform: translateY(-43%) rotate(180deg);
+  transform-origin: center;
+  background-color: #ffffff;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+body.dark .sidebar header .toggle {
+  color: #ccc;
+}
+
+.sidebar.close .toggle {
+  transform: translateY(-43%) rotate(0deg);
+  right: -35px;
+  background: transparent;
+  transition: all 0.5s ease;
+}
+
+.sidebar.close .nav-link {
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: all 0.5s ease;
+}
+
+.sidebar.close .logo-bar {
+  padding-left: 27px;
+  padding-right: 27px;
+  transition: all 0.5s ease;
+}
+
+.sidebar.close .menu-name {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.sidebar .menu {
+  margin-top: 40px;
+}
+
+.quick-panel .menu-links {
+  display: flex;
+}
+
+/*# sourceMappingURL=index.css.map */
