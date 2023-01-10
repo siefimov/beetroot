@@ -3,6 +3,7 @@
     height: 46px;
     display: flex;
     padding-left: 15px;
+    color: $text-color;
     cursor: pointer;
     transition: $tran-03;
     &:hover {
@@ -64,7 +65,7 @@
 .title {
   line-height: calc(20 / 16);
   text-transform: uppercase;
-  color: $gray-middle;
+  color: $text-color;
   padding-left: 15px;
 }
 .title-box {
@@ -75,13 +76,9 @@
   align-items: center;
   padding-left: 15px;
   display: none;
-  // width: 0;
-  // opacity: 0;
   & span:not(:last-child) {
     margin-right: 5px;
   }
-  // color: $purple-dark;
-
   &__small {
     width: 8px;
     height: 5px;

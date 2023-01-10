@@ -1,9 +1,60 @@
 body {
   font-family: $ff-base;
+  background-color: $bg-color;
+  color: $text-color;
+}
+body.dark {
+  $text-color: #bdbdbd;
+  $chevron-color: #bdbdbd;
+  $chevron-bg-color: #283046;
+  $bg-color: #283046;
+  $bg-color-page: #161d31;
+  .sidebar {
+    background-color: $bg-color;
+  }
+  .page__container {
+    background: $bg-color;
+  }
+  .menu__item {
+    color: $text-color;
+  }
+  .sidebar__logo-name{
+    color: $text-color;
+  }
+  .chevron-box{
+    border: 2px solid $chevron-color;
+    background-color: $chevron-bg-color;
+  }
+  .chevron {
+    border-top: 2px solid $chevron-color;
+    border-left: 2px solid $chevron-color;    
+  }
+  .sidebar.close .chevron-box{
+    border: 2px solid $chevron-color;
+    background-color: $chevron-bg-color;
+  }
+  svg {
+    fill: $text-color;
+  }
+  & .page {
+    background-color: $bg-color-page;
+  }
+  & .title {
+    color: $text-color;
+  }
+  & .settings__lang-text{
+    color: $text-color;
+  }
+  & .bg-light{
+    display: none;
+  }
+  & .bg-dark{
+    display: block;
+  }
 }
 .wrapper {
   display: flex;
   max-width: 1440px;
   margin: 0 auto;
+  
 }
-

@@ -82,8 +82,9 @@
 .chevron-box {
   width: 20px;
   height: 20px;
-  border: 2px solid $purple-dark;
+  border: 2px solid $chevron-color;
   border-radius: 50%;
+  background-color: $chevron-bg-color;
   position: absolute;
   top: 36px;
   right: 15px;
@@ -109,4 +110,10 @@
 .chevron.switch {
   transform: rotate(135deg);
   transition: $tran-05;
+}
+
+@media (max-width:1230px){
+    .sidebar__logo-name{
+      display: none;
+    }
 }

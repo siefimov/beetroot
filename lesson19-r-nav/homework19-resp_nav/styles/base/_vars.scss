@@ -10,23 +10,29 @@ $width-container: 1200px; // on 30px more then real container
 /* ------ colors ------- */
 /* ------------------------ */
 $white: #ffffff;
+$bg-color: #ffffff;
+$text-color: #4f4f4f;
+$chevron-color: #392c72;
+$chevron-bg-color: #ffffff;
+
 $gray-dark: #4f4f4f;
-$gray-middle: #828282;
-$gray-light: #bdbdbd;
+
+// $gray-middle: #828282;
+// $gray-light: #bdbdbd;
 $purple-dark: #392c72;
 $purple-light: #9e8cfc;
 $red: #ea5455;
 $yellow: #f2c94c;
 $green: #6fcf97;
-$blue-dark: #283046;
-$blue-darken: #161d31;
+// $blue-dark: #283046;
+// $blue-darken: #161d31;
 
-$body-color: #18191a;
-$sidebar-color: #242526;
-$primary-color: #3a3b3c;
-$primary-color-light: #3a3b3c;
-$toggle-color: #fff;
-$text-color: #ccc;
+// $body-color: #18191a;
+// $sidebar-color: #242526;
+// $primary-color: #3a3b3c;
+// $primary-color-light: #3a3b3c;
+// $toggle-color: #fff;
+
 
 /* ====== Transition ====== */
 $tran-02: all 0.2s ease;

@@ -9,18 +9,16 @@
     max-width: 1170px;
     width: 100%;
     display: flex;
-
   }
   &__header {
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
-  &__img{
-    max-width: 1170px;
+  &__img {
     width: 100%;
     display: flex;
-    margin: 68px 25px 0;
+    margin: 68px 0;
   }
 }
 .quick-panel {
@@ -78,4 +76,8 @@
     border: 1px solid #ffffff;
     border-radius: 50%;
   }
+}
+
+.bg-dark {
+  display: none;
 }
