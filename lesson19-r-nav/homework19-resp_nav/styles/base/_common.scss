@@ -18,18 +18,18 @@ body.dark {
   .menu__item {
     color: $text-color;
   }
-  .sidebar__logo-name{
+  .sidebar__logo-name {
     color: $text-color;
   }
-  .chevron-box{
+  .chevron-box {
     border: 2px solid $chevron-color;
     background-color: $chevron-bg-color;
   }
   .chevron {
     border-top: 2px solid $chevron-color;
-    border-left: 2px solid $chevron-color;    
+    border-left: 2px solid $chevron-color;
   }
-  .sidebar.close .chevron-box{
+  .sidebar.close .chevron-box {
     border: 2px solid $chevron-color;
     background-color: $chevron-bg-color;
   }
@@ -42,13 +42,13 @@ body.dark {
   & .title {
     color: $text-color;
   }
-  & .settings__lang-text{
+  & .settings__lang-text {
     color: $text-color;
   }
-  & .bg-light{
+  & .bg-light {
     display: none;
   }
-  & .bg-dark{
+  & .bg-dark {
     display: block;
   }
 }
@@ -56,5 +56,4 @@ body.dark {
   display: flex;
   max-width: 1440px;
   margin: 0 auto;
-  
 }
