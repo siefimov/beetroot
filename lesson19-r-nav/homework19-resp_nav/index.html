@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Responsive Navigation</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <div class="sidebar__header">
+          <div class="chevron-box">
+            <div class="chevron"></div>
+          </div>
+          <div class="sidebar__logo">
+            <svg class="sidebar__logo-img" width="32" height="32" viewBox="0 0 32 32">
+              <use xlink:href="./assets/images/sprites.svg#logo"></use>
+            </svg>
+            <div class="sidebar__logo-name">LightBoard</div>
+          </div>
+        </div>
+
+        <div class="sidebar__menu menu">
+          <div class="menu__dashboard dashboard">
+            <ul class="menu__lists">
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <svg class="dashboard-img s-icon" width="26" height="26" viewBox="0 0 26 26">
+                    <use xlink:href="./assets/images/sprites.svg#dashboard"></use>
+                  </svg>
+                  <span class="text menu__item-text">Dashboard</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu__apps apps">
+            <div class="apps__title title-box">
+              <h2 class="title">apps</h2>
+              <div class="title-dash">
+                <span class="title-dash__small"></span>
+                <span class="title-dash__big"></span>
+                <span class="title-dash__small"></span>
+              </div>
+            </div>
+            <ul class="menu__lists">
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <svg class="menu__link-img s-icon" width="26" height="26" viewBox="0 0 26 26">
+                    <use xlink:href="./assets/images/sprites.svg#email"></use>
+                  </svg>
+                  <span class="text menu__item-text">Email</span>
+                  <span class="badge badge-green">10</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <svg class="menu__link-img s-icon" width="26" height="26" viewBox="0 0 26 26">
+                    <use xlink:href="./assets/images/sprites.svg#bubble"></use>
+                  </svg>
+                  <span class="text menu__item-text">Chats</span>
+                  <span class="badge badge-red">10</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <svg class="menu__link-img s-icon" width="26" height="26" viewBox="0 0 26 26">
+                    <use xlink:href="./assets/images/sprites.svg#calendar"></use>
+                  </svg>
+                  <span class="text menu__item-text">Calendar</span>
+                  <span class="badge badge-yellow">10</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <svg class="menu__link-img s-icon" width="26" height="26" viewBox="0 0 26 26">
+                    <use xlink:href="./assets/images/sprites.svg#news"></use>
+                  </svg>
+                  <span class="text menu__item-text">News</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <svg class="menu__link-img s-icon" width="26" height="26" viewBox="0 0 26 26">
+                    <use xlink:href="./assets/images/sprites.svg#study"></use>
+                  </svg>
+                  <span class="text menu__item-text">Knowledge</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <svg class="menu__link-img s-icon" width="26" height="26" viewBox="0 0 26 26">
+                    <use xlink:href="./assets/images/sprites.svg#stack"></use>
+                  </svg>
+                  <span class="text menu__item-text">File manager</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <svg class="menu__link-img s-icon" width="26" height="26" viewBox="0 0 26 26">
+                    <use xlink:href="./assets/images/sprites.svg#location"></use>
+                  </svg>
+                  <span class="text menu__item-text">Leaflet Maps</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu__auth-pages auth-pages">
+            <div class="apps__title title-box">
+              <h2 class="title">auth-pages</h2>
+              <div class="title-dash">
+                <span class="title-dash__small"></span>
+                <span class="title-dash__big"></span>
+                <span class="title-dash__small"></span>
+              </div>
+            </div>
+            <ul class="menu__lists">
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <svg class="auth-pages-img s-icon" width="26" height="26" viewBox="0 0 26 26">
+                    <use xlink:href="./assets/images/sprites.svg#profile"></use>
+                  </svg>
+                  <span class="text menu__item-text">Profile</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <svg class="auth-pages-img s-icon" width="26" height="26" viewBox="0 0 26 26">
+                    <use xlink:href="./assets/images/sprites.svg#lock"></use>
+                  </svg>
+                  <span class="text menu__item-text">Permissions</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <svg class="auth-pages-img s-icon" width="26" height="26" viewBox="0 0 26 26">
+                    <use xlink:href="./assets/images/sprites.svg#log-out"></use>
+                  </svg>
+                  <span class="text menu__item-text">Log Out</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu__user user">
+            <div class="apps__title title-box">
+              <h2 class="title">user interface</h2>
+              <div class="title-dash">
+                <span class="title-dash__small"></span>
+                <span class="title-dash__big"></span>
+                <span class="title-dash__small"></span>
+              </div>
+            </div>
+            <ul class="menu__lists">
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <svg class="eye s-icon" width="26" height="26" viewBox="0 0 26 26">
+                    <use xlink:href="./assets/images/sprites.svg#eye"></use>
+                  </svg>
+                  <span class="text menu__item-text">Feather</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <svg class="eye s-icon" width="26" height="26" viewBox="0 0 26 26">
+                    <use xlink:href="./assets/images/sprites.svg#wallet"></use>
+                  </svg>
+                  <span class="text menu__item-text">Ecommerce</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <svg class="eye s-icon" width="26" height="26" viewBox="0 0 26 26">
+                    <use xlink:href="./assets/images/sprites.svg#lab"></use>
+                  </svg>
+                  <span class="text menu__item-text">Components</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <svg class="eye s-icon" width="26" height="26" viewBox="0 0 26 26">
+                    <use xlink:href="./assets/images/sprites.svg#page"></use>
+                  </svg>
+                  <span class="text menu__item-text">Pages</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <svg class="eye s-icon" width="26" height="26" viewBox="0 0 26 26">
+                    <use xlink:href="./assets/images/sprites.svg#pen"></use>
+                  </svg>
+                  <span class="text menu__item-text">Editor</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <main class="page">
+        <div class="page__container">
+          <div class="page__header">
+            <div class="quick-panel">
+              <ul class="quick-panel__menu-list menu__lists">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <svg class="menu__link-img s-icon" width="26" height="26" viewBox="0 0 26 26">
+                      <use xlink:href="./assets/images/sprites.svg#email"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <svg class="menu__link-img s-icon" width="26" height="26" viewBox="0 0 26 26">
+                      <use xlink:href="./assets/images/sprites.svg#bubble"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <svg class="menu__link-img s-icon" width="26" height="26" viewBox="0 0 26 26">
+                      <use xlink:href="./assets/images/sprites.svg#calendar"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <svg class="menu__link-img s-icon" width="26" height="26" viewBox="0 0 26 26">
+                      <use xlink:href="./assets/images/sprites.svg#star"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="settings">
+              <div class="settings__lang">
+                <a href="#" class="menu__link">
+                  <svg class="menu__link-img s-icon" width="26" height="26" viewBox="0 0 26 26">
+                    <use xlink:href="./assets/images/sprites.svg#lang"></use>
+                  </svg>
+                </a>
+                <a href="#" class="settings__lang-text">English</a>
+              </div>
+              <ul class="settings__menu-list menu__lists">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <svg class="menu__link-img s-icon" width="26" height="26" viewBox="0 0 26 26">
+                      <use xlink:href="./assets/images/sprites.svg#change-theme"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <svg class="menu__link-img s-icon" width="26" height="26" viewBox="0 0 26 26">
+                      <use xlink:href="./assets/images/sprites.svg#search"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <svg class="menu__link-img s-icon" width="26" height="26" viewBox="0 0 26 26">
+                      <use xlink:href="./assets/images/sprites.svg#set"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <div class="settings__avatar">
+                <span class="settings__avatar-status"></span>
+                <a href="#"><img src="./assets/images/Avatar.png" alt="Avatar" /></a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="page__img">
+            <img src="./assets/images/bg.jpg" alt="">
+          </div>
+      </main>
+      <script src="./js/script.js"></script>
+    </div>
+  </body>
+</html>
