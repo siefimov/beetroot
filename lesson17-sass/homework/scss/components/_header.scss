@@ -1,0 +1,63 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  max-height: 157px;
+  margin: 0 auto;
+  &__subtitle {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: rem(18);
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #898f8f;
+    margin-bottom: 15px;
+  }
+  &__title {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: rem(60);
+    line-height: 66px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffcc00;
+    margin-bottom: 40px;
+  }
+  &__img {
+    display: block;
+    position: relative;
+  }
+  &__img-box {
+    position: relative;
+  }
+  &__img-box::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
+    display: inline-block;
+    width: 210px;
+    height: 1px;
+    background-color: #ffcc00;
+  }
+  &__img-box::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25px;
+    display: inline-block;
+    width: 210px;
+    height: 1px;
+    background-color: #ffcc00;
+  }
+}
+.team__header {
+  margin-bottom: 40px;
+}
