@@ -1,0 +1,86 @@
+.flip-card {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.fc-header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.fc-header__divider {
+  width: 100px;
+  height: 8px;
+  background: #000000;
+  margin-right: 20px;
+}
+.fc-header__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+.flip-card__row {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-auto-rows: 180px;
+  justify-items: center;
+  padding: 15px;
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: #bfbfbf;
+}
+.fc-item {
+  background-color: transparent;
+  width: 270px;
+  perspective: 600px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* This container is needed to position the front and back side */
+.fc-item__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.fc-item:hover .fc-item__inner {
+  transform: rotateX(180deg);
+}
+
+/* Position the front and back side */
+.fc-item__front,
+.fc-item__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /*Safari*/
+  backface-visibility: hidden;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the front side (fallback if image is missing) */
+.fc-item__front {
+  background-color: #e6e6e6;
+  color: black;
+}
+
+/* Style the back side */
+.fc-item__back {
+  background-color: #1a1a1a;
+  color: white;
+  transform: rotateX(180deg);
+}
