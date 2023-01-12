@@ -1,0 +1,230 @@
+/* -------------------- */
+/* --- BASE STYLES --- */
+/* -------------------- */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+}
+
+body {
+  font-family: $ff-base;
+  font-size: $fs-base;
+  line-height: $lh-base;
+  color: $color-base;
+}
+a:hover {
+  color: $color-base;
+}
+a:active {
+  text-decoration: underline;
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+}
+/* bounding continer */
+[class*="__container"] {
+  max-width: $width-container;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (max-width: 768px) {
+  [class*="__container"] {
+    max-width: 768px;
+    padding: 0 34px;
+  }
+}
+@media (max-width: 320px) {
+  [class*="__container"] {
+    max-width: 320px;
+    padding: 0 10px;
+  }
+}
+.page {
+  flex: 1 1 auto;
+
+  @media (max-width: 320px) {
+    margin-bottom: 70px;
+  }
+}
+
+/*========= header ========*/
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: $color-base;
+  &__container {
+    width: 100%;
+  }
+}
+
+/*========== main ============*/
+.page > div {
+  margin-bottom: 90px;
+}
+
+.first-screen__title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  font-size: rem(48);
+  line-height: calc(64 / 48);
+  letter-spacing: 0.05em;
+  color: $color-base;
+  margin-bottom: 70px;
+}
+.title-h2 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  font-size: rem(48);
+  line-height: 1.33333333; /* 64/48 */
+  letter-spacing: 0.05em;
+}
+.title-h3 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  font-size: rem(28);
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: $color-base;
+  margin-bottom: 50px;
+  @media (max-width: 320px) {
+    font-size: rem(26);
+  }
+}
+.content {
+  margin-top: 20px;
+  &__paragraph {
+    font-family: $ff-base;
+    font-weight: 400;
+    font-size: rem(19);
+    line-height: calc(32 / 19);
+    letter-spacing: 0.05em;
+    color: #565656;
+    @media (max-width: 320px) {
+      font-size: rem(16);
+    }
+    &:first-child {
+      margin-bottom: 45px;
+    }
+  }
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  @media (max-width: 768px) {
+    align-items: center;
+  }
+}
+
+/*======== footer ============*/
+
+.footer {
+  background-color: #f4f4f4;
+  padding: 70px 0 30px 0;
+  &__cta-title {
+    margin-bottom: 30px;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__socials {
+    align-self: center;
+  }
+  &__copyright {
+    display: flex;
+    justify-content: center;
+  }
+  &__copyright-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 50px 0px 50px 0px;
+    &__row {
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+    &__cta {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    &__cta-title {
+      text-align: center;
+    }
+    &__copyright-text {
+      font-size: rem(16);
+    }
+  }
+}
+@media (max-width: 320px) {
+  .footer {
+    &__cta-title {
+      font-size: rem(32);
+      line-height: calc(42 / 32);
+      letter-spacing: 0.05em;
+    }
+    &__cta-contacts {
+      font-size: rem(18);
+    }
+    &__copyright-text {
+      display: flex;
+      flex-direction: column;
+      & span {
+        margin-top: 5px;
+      }
+    }
+  }
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  &__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    // padding: 10px;
+    border: 1px solid $grey;
+    margin-right: 23px;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: $grey;
+      transition: background-color 0.3s ease;
+    }
+    @media (max-width: 768px) {
+      margin-right: unset;
+    }
+  }
+  &__icon {
+    color: $grey;
+    font-size: rem(24);
+  }
+  &__box:hover &__icon {
+    color: $white;
+    transition: color 0.3s ease;
+  }
+}
+@media (max-width: 768px) {
+  .socials__box:not(:last-child) {
+    margin-right: 23px;
+  }
+}
