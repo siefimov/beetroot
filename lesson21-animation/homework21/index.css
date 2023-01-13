@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+body {
+  font-size: 22px;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+footer p {
+  text-align: center;
+}
+
+.suit {
+  font-size: 38px;
+}
+
+.red {
+  color: red;
+}
+
+.hearts,
+.clubs {
+  font-size: 35px;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgb(245, 249, 249);
+}
+.cards__row {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-content: center;
+}
+
+.card {
+  width: 102px;
+  height: 160px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  perspective: 600px;
+  box-sizing: border-box;
+  cursor: pointer;
+  /* This container is needed to position the front and back side */
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* Position the front and back side */
+}
+.card__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+.card:hover .card__inner {
+  transform: rotateY(180deg);
+}
+.card__front, .card__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /*Safari*/
+  backface-visibility: hidden;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__front {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.card__back {
+  width: 100px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  transform: rotateY(180deg);
+}
+.card__back img {
+  display: inline-block;
+  width: 95%;
+  height: 95%;
+}
+.card__suit-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding-bottom: 10px;
+  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+}
+.card__img {
+  display: block;
+  width: 80%;
+  height: 80%;
+  align-self: center;
+  margin-bottom: -10px;
+}
+.card__rank-suit.hearts {
+  font-size: 22px;
+}
+.card__rank--top {
+  align-self: flex-start;
+}
+.card__rank--bottom {
+  align-self: flex-end;
+  transform: rotate(180deg);
+}
+.card__rank-value {
+  letter-spacing: -1px;
+}
+
+.suit-box__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.suit-box__row-item {
+  padding-top: 10px;
+}
+
+.suit-up {
+  padding-top: 0;
+}
+
+/*# sourceMappingURL=index.css.map */
