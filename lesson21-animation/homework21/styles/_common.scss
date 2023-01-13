@@ -11,14 +11,14 @@ footer p{
   text-align: center;
 }
 .suit {
-  font-size: $suit-size;
-}
-.red {
-  color: red;
+  font-size: 38px;
 }
 .hearts,
 .clubs {
   font-size: 35px;
+}
+.red {
+  color: red;
 }
 .cards {
   max-width: 1200px;
@@ -55,7 +55,7 @@ footer p{
     border: 1px solid #000000;
     border-radius: 10px;
   }
-  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* Do an vertical flip when you move the mouse over the flip box container */
   &:hover .card__inner {
     transform: rotateY(180deg);
   }
