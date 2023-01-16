@@ -10,6 +10,14 @@ h1 {
 footer p {
   text-align: center;
 }
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
 .suit {
   font-size: 38px;
 }
@@ -30,7 +38,7 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     -moz-column-gap: 10px;
-         column-gap: 10px;
+    column-gap: 10px;
     row-gap: 10px;
     justify-content: center;
   }
@@ -51,14 +59,15 @@ footer p {
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.8s;
+    // transition: transform 0.8s;
     transform-style: preserve-3d;
     border: 1px solid #000000;
     border-radius: 10px;
   }
   /* Do an vertical flip when you move the mouse over the flip box container */
   &:hover .card__inner {
-    transform: rotateY(180deg);
+    // transform: rotateY(180deg);
+    animation: rotate 0.8s;
   }
   /* Position the front and back side */
   &__front,
