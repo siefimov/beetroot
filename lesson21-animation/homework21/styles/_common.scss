@@ -7,7 +7,7 @@ h1 {
   text-align: center;
   letter-spacing: 5px;
 }
-footer p{
+footer p {
   text-align: center;
 }
 .suit {
@@ -25,11 +25,12 @@ footer p{
   margin: 50px auto;
   padding: 20px;
   background-color: rgb(245, 249, 249);
-  
+
   &__row {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 10px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
     row-gap: 10px;
     justify-content: center;
   }
