@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Forn styling</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <div>
+          <label class="large-label" for="name">Name</label>
+          <input id="name" type="text" placeholder="First or Full Name" />
+        </div>
+        <div>
+          <label class="large-label" for="email">Email</label>
+          <input id="email" type="email" placeholder="name@example.com" />
+        </div>
+        <div>
+          <label class="large-label" for="comp">Favorite CSS Compiler</label>
+          <select id="comp">
+            <option value="sass">Sass</option>
+            <option value="less">Less</option>
+            <option value="stylus">Stylus</option>
+            <option value="postcss">PostCSS</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div>
+          <fieldset>
+            <legend class="large-label">Are you familiar with CSS Grid?</legend>
+            <input type="radio" name="grid" id="yes" value="yes" />
+            <label class="small-label" for="yes">Yes</label>
+            <input type="radio" name="grid" id="no" value="no" />
+            <label class="small-label" for="no">No</label>
+          </fieldset>
+        </div>
+        <div class="full-width">
+          <label class="large-label" for="message">Message</label>
+          <textarea id="message" placeholder="Leave a message…"></textarea>
+        </div>
+        <div class="full-width">
+          <input type="checkbox" id="newsletter" />
+          <label class="small-label" for="newsletter">Receive our newsletter?</label>
+        </div>
+        <div class="full-width">
+          <button type="submit">Send Response</button>
+          <button type="reset">Clear Form</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
