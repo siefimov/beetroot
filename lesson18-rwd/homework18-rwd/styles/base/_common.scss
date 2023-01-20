@@ -1,0 +1,251 @@
+/* -------------------- */
+/* --- BASE STYLES --- */
+/* -------------------- */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+}
+
+body {
+  font-family: $ff-base;
+  font-size: $fs-base;
+  line-height: $lh-base;
+  color: $color-base;
+}
+a:hover {
+  color: $color-base;
+}
+a:active {
+  text-decoration: underline;
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+}
+/* bounding continer */
+[class*="__container"] {
+  max-width: $width-container;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (max-width: 768px) {
+  [class*="__container"] {
+    max-width: 768px;
+    padding: 0 34px;
+  }
+}
+@media (max-width: 320px) {
+  [class*="__container"] {
+    max-width: 320px;
+    padding: 0 10px;
+  }
+}
+.page {
+  flex: 1 1 auto;
+  margin-bottom: 106px;
+  &__blog,
+  &__latest-posts,
+  &__popular {
+    margin-bottom: 90px;
+  }
+  @media (max-width: 768px) {
+    &__blog,
+    &__latest-posts,
+    &__popular {
+      margin-bottom: 70px;
+    }
+  }
+  @media (max-width: 320px) {
+    margin-bottom: 70px;
+  }
+}
+
+/*-------------------------------*/
+/*-----------search bar ---------*/
+/*-------------------------------*/
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  padding: 5px 0 2px 2px;
+  height: 20px;
+  cursor: pointer;
+  background-color: #fff;
+}
+.search-box:hover {
+  display: flex;
+  border-bottom: 1px solid lightslategrey;
+}
+.search-box:hover input {
+  width: 184px;
+}
+.search-box input {
+  width: 0;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  transition: 0.8s;
+  background: transparent;
+}
+.search-box button {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.search-box button .fas {
+  font-size: 16px;
+}
+/*----------------------------*/
+
+.title-h2 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  font-size: rem(48);
+  line-height: 1.33333333; /* 64/48 */
+  letter-spacing: 0.05em;
+}
+.title-h4 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: rem(23);
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+}
+.title-h3 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  font-size: rem(28);
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: $color-base;
+}
+.title-h4 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: rem(23);
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 130px;
+  margin-left: 15px;
+  cursor: pointer;
+  @media (max-width:1055px){
+      margin-left: 0;
+  }
+  &__text {
+    display: none;
+    width: 0%;
+    transition: width 1.5s ease 0.2s;
+
+    margin-right: 8px;
+
+    font-family: $ff-base;
+    font-weight: $fw-base;
+    font-size: $fs-base;
+    line-height: 1.663;
+    letter-spacing: 0.1em;
+    color: $color-base;
+  }
+  &:hover &__text {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 0 1 auto;
+    width: 100%;
+    transition: width 1.5s ease 0.2s;
+  }
+  &:hover &__arrow {
+    fill: $color-base;
+  }
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  color: $white;
+  &__link {
+    font-family: $ff-base;
+    font-weight: 700;
+    font-size: $fs-base;
+    line-height: 1.66;
+    letter-spacing: 0.1em;
+    background-color: $grey;
+    padding: 9.5px 45px;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: #323232;
+      color: $white;
+      transition: background-color 0.3s ease;
+    }
+    &:active {
+      text-decoration: none;
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  @media (max-width: 768px) {
+    align-items: center;
+  }
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  &__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    // padding: 10px;
+    border: 1px solid $grey;
+    margin-right: 23px;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: $grey;
+      transition: background-color 0.3s ease;
+    }
+    @media (max-width: 768px) {
+      margin-right: unset;
+    }
+  }
+  &__icon {
+    color: $grey;
+    font-size: rem(24);
+  }
+  &__box:hover &__icon {
+    color: $white;
+    transition: color 0.3s ease;
+  }
+}
+@media (max-width: 768px) {
+  .socials__box:not(:last-child) {
+    margin-right: 23px;
+  }
+  
+}
