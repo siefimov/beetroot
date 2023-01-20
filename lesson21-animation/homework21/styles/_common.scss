@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+body {
+  font-size: 22px;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+h1 {
+  text-align: center;
+  letter-spacing: 5px;
+}
+footer p {
+  text-align: center;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.suit {
+  font-size: 38px;
+}
+.hearts,
+.clubs {
+  font-size: 35px;
+}
+.red {
+  color: red;
+}
+.cards {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgb(245, 249, 249);
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+  }
+}
+
+.card {
+  width: 102px;
+  height: 160px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  perspective: 600px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  /* This container is needed to position the front and back side */
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    // transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border: 1px solid #000000;
+    border-radius: 10px;
+  }
+  /* Do an vertical flip when you move the mouse over the flip box container */
+  &:hover .card__inner {
+    // transform: rotateY(180deg);
+    animation: rotate 0.8s;
+  }
+  /* Position the front and back side */
+  &__front,
+  &__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /*Safari*/
+    backface-visibility: hidden;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__front {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  &__back {
+    width: 100px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    transform: rotateY(180deg);
+    & img {
+      display: inline-block;
+      width: 95%;
+      height: 95%;
+    }
+  }
+  &__suit-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding-bottom: 10px;
+    flex: 1 1 auto;
+    width: 100%;
+    height: 100%;
+  }
+  &__img {
+    display: block;
+    width: 80%;
+    height: 80%;
+    align-self: center;
+    margin-bottom: -10px;
+  }
+  &__rank-suit.hearts {
+    font-size: 22px;
+  }
+  &__rank--top {
+    align-self: flex-start;
+  }
+  &__rank--bottom {
+    align-self: flex-end;
+    transform: rotate(180deg);
+  }
+  &__rank-value {
+    letter-spacing: -1px;
+  }
+}
+.suit-box__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  &-item {
+    padding-top: 10px;
+  }
+}
+.suit-up {
+  padding-top: 0;
+}

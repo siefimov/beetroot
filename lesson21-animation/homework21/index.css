@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+body {
+  font-size: 22px;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+footer p {
+  text-align: center;
+}
+
+.suit {
+  font-size: 38px;
+}
+
+.red {
+  color: red;
+}
+
+.hearts,
+.clubs {
+  font-size: 35px;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgb(245, 249, 249);
+}
+.cards__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+  row-gap: 10px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.card {
+  width: 102px;
+  height: 160px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  -webkit-perspective: 600px;
+  perspective: 600px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  /* This container is needed to position the front and back side */
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* Position the front and back side */
+}
+.card__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+.card:hover .card__inner {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.card__front,
+.card__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /*Safari*/
+  backface-visibility: hidden;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.card__front {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.card__back {
+  width: 100px;
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.card__back img {
+  display: inline-block;
+  width: 95%;
+  height: 95%;
+}
+.card__suit-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  padding-bottom: 10px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+}
+.card__img {
+  display: block;
+  width: 80%;
+  height: 80%;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  margin-bottom: -10px;
+}
+.card__rank-suit.hearts {
+  font-size: 22px;
+}
+.card__rank--top {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+.card__rank--bottom {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.card__rank-value {
+  letter-spacing: -1px;
+}
+
+.suit-box__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+.suit-box__row-item {
+  padding-top: 10px;
+}
+
+.suit-up {
+  padding-top: 0;
+}
