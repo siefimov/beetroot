@@ -14,4 +14,4 @@ alert(`Your age is ${age}`);
 // 3. Запитай у користувача довжину сторони квадрату і виведи периметр цього квадрата
 let lengthOfSquare = prompt("Enter length of square");
 let perimeterOfSquare = +lengthOfSquare * 4;
-alert(`Perimeter of a square is ${perimeterOfSquare}`);
+alert(`Perimeter of a square with length of ${lengthOfSquare} is ${perimeterOfSquare}`);
