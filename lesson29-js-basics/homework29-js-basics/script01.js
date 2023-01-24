@@ -1,10 +1,12 @@
+/* Homework Minimum */
+
 //* correct names of variables
 const fullName = "Peter Angel";
 const nameAndSurname = "John Clinton";
 const clientsName = "Alisa Olush";
-const my_name = "Kevin Costner";
-console.log(my_name);
 
+// possible names of variables but not recommended
+const my_name = "Kevin Costner";
 let number = 23;
 let name = "John";
 let Name = "John";
@@ -31,4 +33,4 @@ const _ = true;
 //* Styles writing names of variables
 // camelCase
 // PascalCase
-// snake_case
+// snake_case - not recommended
