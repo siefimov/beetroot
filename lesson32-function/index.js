@@ -84,7 +84,6 @@ console.log(joinNumbers(1, " ", 3));
 /* 6. Напиши функцію, яка приймає довжину і ширину прямокутника і обчислює його площу. 
 Якщо в функцію передали 1 параметр, то вона обчислює площу квадрата.*/
 const calcAreaOfRectangle = (length, width) => {
-
   switch (true) {
     case typeof length !== "number" || typeof width !== "number":
       return "Please provide two arguments - 'length' and 'width' as a numeric characters.";
@@ -95,7 +94,6 @@ const calcAreaOfRectangle = (length, width) => {
     default:
       console.log("There is nothing to show");
   }
-
 };
 
 console.log(calcAreaOfRectangle());
@@ -109,7 +107,6 @@ console.log(calcAreaOfRectangle(12, " "));
 console.log(calcAreaOfRectangle(12, ""));
 console.log(calcAreaOfRectangle(12, 0));
 
-
 //! harder (use closures )
 // write function that base on year of birth  received will return age,
 // the year must be different each time i call the functiomn
@@ -119,9 +116,9 @@ console.log(calcAreaOfRectangle(12, 0));
 // 4. if all good return message your age is ....
 
 const calcAge = (currentYear) => {
-
   return (yearOfBirth) => {
-    if (isNaN(yearOfBirth) || !yearOfBirth || yearOfBirth === " ") {
+    // if (isNaN(yearOfBirth) || !yearOfBirth || yearOfBirth === " ")
+    if (typeof yearOfBirth !== "number") {
       return "Please enter valid value of year of your birth";
     }
     const age = currentYear - Number(yearOfBirth);
@@ -132,7 +129,6 @@ const calcAge = (currentYear) => {
 
     return `Your are <${age}> years old`;
   };
-  
 };
 
 const calcYourAge = calcAge(2023);
@@ -148,3 +144,25 @@ console.log(calcYourAge(+0));
 console.log(calcYourAge(""));
 console.log(calcYourAge(" "));
 console.log(calcYourAge(null));
+
+// ! NORMA
+/*
+ * 1. Напиши функцію, яка перевіряє, чи є передане їй число “досконалим числом”.
+ * Досконале число - це число, яке дорівнює сумі всіх своїх дільників.
+ */
+
+function isPerfect(number) {
+  let temp = 0;
+  for (let i = 1; i <= number / 2; i++) {
+    if (number % i === 0) {
+      temp += i;
+    }
+  }
+
+  if (temp === number && temp !== 0) {
+    return "Це досконале число.";
+  } else {
+    return "Це не досконале число.";
+  }
+}
+console.log(isPerfect(28));
