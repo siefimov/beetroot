@@ -4,7 +4,7 @@
 можливість введення невірних даних.*/
 const age = prompt("Enter your age");
 
-if (age === null || age === " " || age === "") {
+if (typeof age !== "number" || age === null) {
   console.log("Please enter your age in numbers");
 } else {
   Number(age);
@@ -30,7 +30,7 @@ if (age === null || age === " " || age === "") {
 на цій клавіші (1 !, 2 @, 3 # і т. д).*/
 let number = prompt("Enter any number from 0 to 9");
 
-if (number === null || number === " " || number === "") {
+if (typeof number !== "number" || number === null || number === " " || number === "") {
   console.log(`${number} is not a number. Please enter number from 0 to 9.`);
 } else {
   number = +number;
@@ -78,6 +78,19 @@ for (let i = 0; i < userArray.length; i++) {
   sumUserArray += userArray[i];
 }
 console.log(`The sum of all numbers from the range is equal ${sumUserArray}`);
+
+// Code corresponding to the essence of the task.
+const rangArray = [10, 20];
+const qtyOfNumber = rangArray[1] - rangArray[0];
+
+let rangArrayWithAllNumbers = [];
+for (let i = 0; i <= qtyOfNumber; i++) {
+  rangArrayWithAllNumbers.push(rangArray[0] + i);
+}
+const sumNumbersFromArray = rangArrayWithAllNumbers.reduce((result, number) => result + number);
+
+console.log({ rangArrayWithAllNumbers });
+console.log({ sumNumbersFromArray });
 
 //* ==== NORMA ====
 /* 2. Запитай у користувача суму покупки і виведи суму до оплати зі знижкою:
