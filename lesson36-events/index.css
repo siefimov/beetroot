@@ -1,0 +1,33 @@
+#sortable {
+  margin-right: 100px;
+}
+
+table,
+th,
+td {
+  /* border: 1px solid lightslategray; */
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+th {
+  cursor: pointer;
+}
+
+table tr th {
+  background-color: lightslategrey;
+  color: whitesmoke;
+}
+tr:nth-child(even) {
+  background-color: rgb(238, 236, 236);
+}
+table tr th,
+table tr td {
+  padding: 10px 10px;
+  text-align: center;
+}
+table tr td:nth-child(3) {
+  text-align: end;
+}
+table tr td:nth-child(2) {
+  width: 200px;
+}

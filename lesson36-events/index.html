@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>JS - Events</title>
+  </head>
+  <body>
+    <div class="entered-text">
+      Here we have some entered text. You can change it. Just click "ctrl + E"
+    </div>
+    <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+    <br />
+    <br />
+    <!-- table -->
+    
+      <table id="sortable">
+        <thead>
+          <tr>
+            <th onclick="sortBy(0)">Date</th>
+            <th onclick="sortBy(1)">Product</th>
+            <th onclick="sortBy(2)">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2023.01.23</td>
+            <td>mango</td>
+            <td>75</td>
+          </tr>
+          <tr>
+            <td>2023.01.12</td>
+            <td>apple</td>
+            <td>120</td>
+          </tr>
+          <tr>
+            <td>2023.01.15</td>
+            <td>banana</td>
+            <td>70</td>
+          </tr>
+          <tr>
+            <td>2023.02.12</td>
+            <td>pineapple</td>
+            <td>150</td>
+          </tr>
+          <tr>
+            <td>2023.02.10</td>
+            <td>plum</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <td>2023.01.12</td>
+            <td>blueberry</td>
+            <td>150</td>
+          </tr>
+          <tr>
+            <td>2023.01.14</td>
+            <td>grape</td>
+            <td>170</td>
+          </tr>
+          <tr>
+            <td>2023.02.12</td>
+            <td>avocado</td>
+            <td>110</td>
+          </tr>
+          <tr>
+            <td>2022.12.12</td>
+            <td>avocado</td>
+            <td>110</td>
+          </tr>
+          <tr>
+            <td>2022.11.22</td>
+            <td>melon</td>
+            <td>130</td>
+          </tr>
+        </tbody>
+      </table>
+
+      
+
+    <script src="index.js"></script>
+  </body>
+</html>
