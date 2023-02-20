@@ -1,3 +1,11 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.entered-text {
+  background-color: linen;
+  padding: 10px 0;
+}
+
 #sortable {
   margin-right: 100px;
 }
@@ -5,7 +13,6 @@
 table,
 th,
 td {
-  /* border: 1px solid lightslategray; */
   border-spacing: 0;
   border-collapse: collapse;
 }
@@ -30,4 +37,34 @@ table tr td:nth-child(3) {
 }
 table tr td:nth-child(2) {
   width: 200px;
+}
+
+/* form */
+#form {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+div label {
+  display: inline-block;
+  width: 70px;
+}
+div input {
+  margin-right: 20px;
+  padding: 5px 0;
+}
+.btn {
+  border: 1px solid;
+  outline: none;
+  padding: 8px 25px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.btn:hover {
+  background-color: rgb(191, 192, 193);
 }
