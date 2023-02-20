@@ -38,8 +38,6 @@ document.addEventListener("keydown", toggleDivTextarea);
 let colPrev = -1; //used to determine if the same column is clicked again
 
 const sortBy = (c) => {
-  console.log(c.target);
-
   const rows = document.querySelector("table").rows.length; // num of rows
   const columns = document.querySelector("table").rows[0].cells.length; // num of columns
 
