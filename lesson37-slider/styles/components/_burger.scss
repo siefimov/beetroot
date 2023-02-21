@@ -1,0 +1,42 @@
+/*--------------------------*/
+/*----------burger----------*/
+/*--------------------------*/
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 8px;
+  cursor: pointer;
+}
+.burger div {
+  width: 34px;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s ease-in;
+}
+.header__burger {
+  display: none;
+  transition: all 0.3s ease-in;
+}
+.burger__close .burger__top {
+  transform: rotate(37deg);
+  transform-origin: left top;
+  transition: all 0.3s ease-in;
+}
+.burger__close .burger__bottom {
+  transform: rotate(-37deg);
+  transform-origin: left bottom;
+  transition: all 0.3s ease-in;
+}
+.burger__close .burger__middle {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .header__burger {
+    display: flex;
+    transition: all 0.3s ease-in;
+  }
+}

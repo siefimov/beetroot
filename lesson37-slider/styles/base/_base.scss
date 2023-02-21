@@ -1,0 +1,33 @@
+/* -------------------- */
+/* --- BASE STYLES --- */
+/* -------------------- */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+}
+
+body {
+  font-family: $ff-base;
+  font-size: $fs-base;
+  line-height: $lh-base;
+  color: $clr-base;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+}
+/* bounding continer */
+[class*="__container"] {
+  max-width: $width-container;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.page {
+  flex: 1 1 auto;
+}

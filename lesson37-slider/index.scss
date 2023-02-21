@@ -1,0 +1,12 @@
+@import "styles/base/fonts";
+@import "styles/base/reset";
+@import "styles/base/functions";
+@import "styles/base/mixins";
+@import "styles/base/vars";
+@import "styles/base/base";
+
+// components
+@import "./styles/components/burger";
+
+// blocks
+@import "styles/blocks/header";
