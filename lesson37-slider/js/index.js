@@ -8,8 +8,8 @@ navBtn.addEventListener("click", () => {
 });
 
 // search bar
-const menuList = document.querySelector(".menu__list");
-const searchBox = document.querySelector(".search-box");
+// const menuList = document.querySelector(".menu__list");
+// const searchBox = document.querySelector(".search-box");
 
 // searchBox.addEventListener("mouseover", () => {
 //   menuList.style.opacity = 0;
@@ -17,3 +17,11 @@ const searchBox = document.querySelector(".search-box");
 // searchBox.addEventListener("mouseout", () => {
 //   menuList.style.opacity = 1;
 // });
+
+const swiper = new Swiper(".swiper-slider", {
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

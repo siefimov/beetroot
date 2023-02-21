@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/8202a5bb59.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="index.css" />
     <title>Document</title>
   </head>
@@ -57,13 +59,54 @@
         </div>
       </header>
       <main class="page">
-        <div class="page__container">main</div>
+        <!-- <div class="page__container"> -->
+        <div class="page__slider slider">
+          <!-- Slider main container -->
+          <div class="swiper-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="img-gradient">
+                  <img src="./assets/images/slider/red-guitar.jpg" alt="Red electronic guitar" />
+                </div>
+                <div class="swiper-slide__content">
+                  <h1 class="swiper-slide__heading">Find your own style</h1>
+                  <a href="#" class="swiper-slide__link">view more</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-gradient">
+                  <img src="./assets/images/slider/yellow-guitar.jpg" alt="Deka of wooden guitar" />
+                </div>
+                <div class="swiper-slide__content">
+                  <h1 class="swiper-slide__heading">expand your horizons</h1>
+                  <a href="#" class="swiper-slide__link">view more</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-gradient">
+                  <img src="./assets/images/slider/set-guitars.jpg" alt="Set of guitars" />
+                </div>
+
+                <div class="swiper-slide__content">
+                  <h1 class="swiper-slide__heading">discover new options</h1>
+                  <a href="#" class="swiper-slide__link">view more</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <!-- </div> -->
       </main>
       <footer class="footer">
         <div class="footer__container">footer</div>
       </footer>
     </div>
 
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
     <script src="./js/index.js"></script>
   </body>
 </html>
