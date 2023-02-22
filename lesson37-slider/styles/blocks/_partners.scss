@@ -1,0 +1,30 @@
+.swiper-partners {
+  width: 1200px;
+}
+
+.partners {
+  background-color: $brown-light;
+  padding: 70px 0 68px 0px;
+  &__container {
+    position: relative;
+  }
+  &__arr-prev-button,
+  &__arr-next-button {
+    top: 25%;
+  }
+  &__prev-btn,
+  &__next-btn {
+    width: 40px;
+    height: 72px;
+    fill: $arrow-inactive;
+  }
+}
+
+@media (max-width: 478px) {
+  .partners__swiper-wrapper {
+    margin-bottom: 20px;
+  }
+  .partners {
+    padding: 50px 0 50px 0;
+  }
+}

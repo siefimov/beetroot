@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/8202a5bb59.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__logo">
+            <a class="header__logo-link" href="#">
+              <img src="./assets/images/header/logo.svg" alt="Logo" />
+            </a>
+          </div>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link menu__link--active">Home</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Catalog</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">News</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__search search">
+            <div class="search-box">
+              <button class="search__btn" href="#" type="submit">
+                <img src="./assets/images/header/search-icon.svg" alt="Search icon" />
+              </button>
+              <a href="#" class="profile__link">
+                <img src="./assets/images/header/profile-icon.svg" alt="Profile icon" />
+              </a>
+            </div>
+          </div>
+          <div class="header__burger burger">
+            <div class="burger__top"></div>
+            <div class="burger__middle"></div>
+            <div class="burger__bottom"></div>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <div class="page__slider slider">
+          <div class="swiper-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="img-gradient">
+                  <img src="./assets/images/slider/red-guitar.jpg" alt="Red electronic guitar" />
+                </div>
+                <div class="swiper-slide__content">
+                  <h1 class="swiper-slide__heading">Find your own style</h1>
+                  <a href="#" class="swiper-slide__link">view more</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-gradient">
+                  <img src="./assets/images/slider/yellow-guitar.jpg" alt="Deka of wooden guitar" />
+                </div>
+                <div class="swiper-slide__content">
+                  <h1 class="swiper-slide__heading">expand your horizons</h1>
+                  <a href="#" class="swiper-slide__link">view more</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-gradient">
+                  <img src="./assets/images/slider/set-guitars.jpg" alt="Set of guitars" />
+                </div>
+
+                <div class="swiper-slide__content">
+                  <h1 class="swiper-slide__heading">discover new options</h1>
+                  <a href="#" class="swiper-slide__link">view more</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="page__product product">
+          <div class="product__container">
+            <h2 class="product__title title-h2">new arrivals</h2>
+            <div class="product__list">
+              <div class="swiper-product product__slider">
+                <div class="swiper-wrapper product__swiper-wrapper">
+                  <div class="swiper-slide product__item">
+                    <div class="product__status in-stock">in stock</div>
+                    <div class="product__card">
+                      <div class="product__card-img">
+                        <img
+                          src="./assets/images/product/guitar01.png"
+                          alt="Guitar dark red color"
+                          class="product__card-photo"
+                        />
+                      </div>
+                      <div class="product__description">
+                        <p class="product__text">Hagstrom Alvar Limited Edition</p>
+                        <p class="product__price">€2.990,00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product__item">
+                    <div class="product__status in-stock">in stock</div>
+                    <div class="product__card">
+                      <div class="product__card-img">
+                        <img
+                          src="./assets/images/product/guitar02.png"
+                          alt="Guitar dark red color"
+                          class="product__card-photo"
+                        />
+                      </div>
+                      <div class="product__description">
+                        <p class="product__text">Hagstrom Tremar Viking Deluxe Cloudy Seas</p>
+                        <p class="product__price">€1.300,00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product__item">
+                    <div class="product__status sold">sold</div>
+                    <div class="product__card">
+                      <div class="product__card-img">
+                        <img
+                          src="./assets/images/product/guitar03.png"
+                          alt="Guitar dark red color"
+                          class="product__card-photo"
+                        />
+                      </div>
+                      <div class="product__description">
+                        <p class="product__text">Gibson Les Paul Standard 60s</p>
+                        <p class="product__price">€3.749,00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product__item">
+                    <div class="product__status in-stock">in stock</div>
+                    <div class="product__card">
+                      <div class="product__card-img">
+                        <img
+                          src="./assets/images/product/guitar04.png"
+                          alt="Guitar dark red color"
+                          class="product__card-photo"
+                        />
+                      </div>
+                      <div class="product__description">
+                        <p class="product__text">Suhr Standard Plus Trans Blue Denim</p>
+                        <p class="product__price">€3.449,00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product__item">
+                    <div class="product__status in-stock">in stock</div>
+                    <div class="product__card">
+                      <div class="product__card-img">
+                        <img
+                          src="./assets/images/product/guitar05.png"
+                          alt="Guitar dark red color"
+                          class="product__card-photo"
+                        />
+                      </div>
+                      <div class="product__description">
+                        <p class="product__text">Fender Telecaster Black Paisley Limited Edition</p>
+                        <p class="product__price">€1.499,00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product__item">
+                    <div class="product__status in-stock">in stock</div>
+                    <div class="product__card">
+                      <div class="product__card-img">
+                        <img
+                          src="./assets/images/product/guitar01.png"
+                          alt="Guitar dark red color"
+                          class="product__card-photo"
+                        />
+                      </div>
+                      <div class="product__description">
+                        <p class="product__text">Hagstrom Alvar Limited Edition</p>
+                        <p class="product__price">€2.990,00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product__item">
+                    <div class="product__status in-stock">in stock</div>
+                    <div class="product__card">
+                      <div class="product__card-img">
+                        <img
+                          src="./assets/images/product/guitar02.png"
+                          alt="Guitar dark red color"
+                          class="product__card-photo"
+                        />
+                      </div>
+                      <div class="product__description">
+                        <p class="product__text">Hagstrom Tremar Viking Deluxe Cloudy Seas</p>
+                        <p class="product__price">€1.300,00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product__item">
+                    <div class="product__status sold">sold</div>
+                    <div class="product__card">
+                      <div class="product__card-img">
+                        <img
+                          src="./assets/images/product/guitar03.png"
+                          alt="Guitar dark red color"
+                          class="product__card-photo"
+                        />
+                      </div>
+                      <div class="product__description">
+                        <p class="product__text">Gibson Les Paul Standard 60s</p>
+                        <p class="product__price">€3.749,00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product__item">
+                    <div class="product__status in-stock">in stock</div>
+                    <div class="product__card">
+                      <div class="product__card-img">
+                        <img
+                          src="./assets/images/product/guitar04.png"
+                          alt="Guitar dark red color"
+                          class="product__card-photo"
+                        />
+                      </div>
+                      <div class="product__description">
+                        <p class="product__text">Suhr Standard Plus Trans Blue Denim</p>
+                        <p class="product__price">€3.449,00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product__item">
+                    <div class="product__status in-stock">in stock</div>
+                    <div class="product__card">
+                      <div class="product__card-img">
+                        <img
+                          src="./assets/images/product/guitar05.png"
+                          alt="Guitar dark red color"
+                          class="product__card-photo"
+                        />
+                      </div>
+                      <div class="product__description">
+                        <p class="product__text">Fender Telecaster Black Paisley Limited Edition</p>
+                        <p class="product__price">€1.499,00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination__product"></div>
+            <button class="prev-btn product__prev-btn">
+              <svg class="prev-btn">
+                <use xlink:href="./assets/images/product/sprite.svg#button-prev"></use>
+              </svg>
+            </button>
+            <button class="next-btn product__next-btn">
+              <svg class="next-btn">
+                <use xlink:href="./assets/images/product/sprite.svg#button-next"></use>
+              </svg>
+            </button>
+            <a href="#" class="product__button swiper-slide__link">view more</a>
+          </div>
+        </div>
+
+        <div class="page__partners partners">
+          <div class="partners__container">
+            <h2 class="partners__title title-h2">our partners</h2>
+            <div class="partners__list">
+              <div class="swiper-partners partners__slider">
+                <div class="swiper-wrapper partners__swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide partners__item">
+                    <img
+                      src="./assets/images/partners/epiphone.png"
+                      alt="Epiphone logo"
+                      class="partners__img"
+                    />
+                  </div>
+                  <div class="swiper-slide partners__item">
+                    <img
+                      src="./assets/images/partners/esp.png"
+                      alt="ESP logo"
+                      class="partners__img"
+                    />
+                  </div>
+                  <div class="swiper-slide partners__item">
+                    <img
+                      src="./assets/images/partners/gibson.png"
+                      alt="Gibson logo"
+                      class="partners__img"
+                    />
+                  </div>
+                  <div class="swiper-slide partners__item">
+                    <img
+                      src="./assets/images/partners/engl.png"
+                      alt="Engl logo"
+                      class="partners__img"
+                    />
+                  </div>
+                  <div class="swiper-slide partners__item">
+                    <img
+                      src="./assets/images/partners/rolnd.png"
+                      alt="Roland logo"
+                      class="partners__img"
+                    />
+                  </div>
+                  <div class="swiper-slide partners__item">
+                    <img
+                      src="./assets/images/partners/ferder.png"
+                      alt="Ferder logo"
+                      class="partners__img"
+                    />
+                  </div>
+                  <div class="swiper-slide partners__item">
+                    <img
+                      src="./assets/images/partners/peaver.png"
+                      alt="Peaver logo"
+                      class="partners__img"
+                    />
+                  </div>
+                  <div class="swiper-slide partners__item">
+                    <img
+                      src="./assets/images/partners/marshall.png"
+                      alt="Marshall logo"
+                      class="partners__img"
+                    />
+                  </div>
+                  <div class="swiper-slide partners__item">
+                    <img
+                      src="./assets/images/partners/orange.png"
+                      alt="Orange logo"
+                      class="partners__img"
+                    />
+                  </div>
+                  <div class="swiper-slide partners__item">
+                    <img
+                      src="./assets/images/partners/epiphone.png"
+                      alt="Epiphone logo"
+                      class="partners__img"
+                    />
+                  </div>
+                  <div class="swiper-slide partners__item">
+                    <img
+                      src="./assets/images/partners/esp.png"
+                      alt="ESP logo"
+                      class="partners__img"
+                    />
+                  </div>
+                  <div class="swiper-slide partners__item">
+                    <img
+                      src="./assets/images/partners/gibson.png"
+                      alt="Gibson logo"
+                      class="partners__img"
+                    />
+                  </div>
+                  <div class="swiper-slide partners__item">
+                    <img
+                      src="./assets/images/partners/engl.png"
+                      alt="Engl logo"
+                      class="partners__img"
+                    />
+                  </div>
+                  <div class="swiper-slide partners__item">
+                    <img
+                      src="./assets/images/partners/rolnd.png"
+                      alt="Roland logo"
+                      class="partners__img"
+                    />
+                  </div>
+                  <div class="swiper-slide partners__item">
+                    <img
+                      src="./assets/images/partners/ferder.png"
+                      alt="Ferder logo"
+                      class="partners__img"
+                    />
+                  </div>
+                  <div class="swiper-slide partners__item">
+                    <img
+                      src="./assets/images/partners/peaver.png"
+                      alt="Peaver logo"
+                      class="partners__img"
+                    />
+                  </div>
+                  <div class="swiper-slide partners__item">
+                    <img
+                      src="./assets/images/partners/marshall.png"
+                      alt="Marshall logo"
+                      class="partners__img"
+                    />
+                  </div>
+                  <div class="swiper-slide partners__item">
+                    <img
+                      src="./assets/images/partners/orange.png"
+                      alt="Orange logo"
+                      class="partners__img"
+                    />
+                  </div>
+                </div>
+
+                <div class="swiper-pagination__partners"></div>
+
+                <button class="prev-btn partners__arr-prev-button">
+                  <svg class="prev-btn partners__prev-btn">
+                    <use xlink:href="./assets/images/product/sprite.svg#button-prev"></use>
+                  </svg>
+                </button>
+                <button class="next-btn partners__arr-next-button">
+                  <svg class="next-btn partners__next-btn">
+                    <use xlink:href="./assets/images/product/sprite.svg#button-next"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <img
+            class="footer__logo-mobile"
+            src="./assets/images/footer/logo-white.png"
+            alt="White OnWave logo"
+          />
+          <div class="footer__info">
+            <div class="footer__logo-menu">
+              <img
+                class="footer__logo"
+                src="./assets/images/footer/logo-white.png"
+                alt="White OnWave logo"
+              />
+              <nav class="footer__menu">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">Home</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">Catalog</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">News</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__contacts">
+              <h3 class="footer__contacts-title">Contact Us</h3>
+              <div class="footer__contacts-socials social-icons">
+                <ul class="social-icons__list">
+                  <li class="social-icons__item">
+                    <a href="#" class="social-icons__link">
+                      <svg class="instagram social-icon">
+                        <use xlink:href="./assets/images/product/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icons__item">
+                    <a href="#" class="social-icons__link">
+                      <svg class="facebook social-icon">
+                        <use xlink:href="./assets/images/product/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icons__item">
+                    <a href="#" class="social-icons__link">
+                      <svg class="pinterest social-icon">
+                        <use xlink:href="./assets/images/product/sprite.svg#pinterest"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icons__item">
+                    <a href="#" class="social-icons__link">
+                      <svg class="twitter social-icon">
+                        <use xlink:href="./assets/images/product/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icons__item">
+                    <a href="#" class="social-icons__link">
+                      <svg class="youtube social-icon">
+                        <use xlink:href="./assets/images/product/sprite.svg#youtube"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <a class="footer__contacts-tel" href="tel:+08003004040">0800 300 4040</a>
+            </div>
+          </div>
+          <div class="footer__copyright">© Copyright 2022. All rights reserved.</div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
