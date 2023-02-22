@@ -7,17 +7,6 @@ navBtn.addEventListener("click", () => {
   navBtn.classList.toggle("burger__close");
 });
 
-// search bar
-// const menuList = document.querySelector(".menu__list");
-// const searchBox = document.querySelector(".search-box");
-
-// searchBox.addEventListener("mouseover", () => {
-//   menuList.style.opacity = 0;
-// });
-// searchBox.addEventListener("mouseout", () => {
-//   menuList.style.opacity = 1;
-// });
-
 const swiper = new Swiper(".swiper-slider", {
   loop: true,
   speed: 800,
@@ -40,7 +29,6 @@ const swiperProduct = new Swiper(".swiper-product", {
       return '<span class="' + className + '">' + "</span>";
     },
   },
-  // + (index + 1)
   navigation: {
     nextEl: ".product__next-btn",
     prevEl: ".product__prev-btn",
@@ -107,14 +95,6 @@ const swiperPartners = new Swiper(".swiper-partners", {
       slidesPerView: 8,
       spaceBetween: 10,
     },
-    // 488: {
-    //   slidesPerView: 6,
-    //   spaceBetween: 10,
-    // },
-    // 487: {
-    //   slidesPerView: 6,
-    //   spaceBetween: 10,
-    // },
     320: {
       slidesPerView: 8,
       spaceBetween: 10,
