@@ -39,10 +39,8 @@
     font-size: rem(14);
     line-height: calc(17 / 14);
     color: $brown-light;
-    // margin-bottom: 42px;
   }
 }
-
 .social-icons {
   margin-bottom: 32px;
   &__list {
@@ -54,7 +52,6 @@
     width: 60px;
   }
 }
-
 .social-icon {
   height: 30px;
 }
@@ -147,13 +144,11 @@
     width: 27px;
   }
 }
-
 @media (max-width: 610px) {
   .footer__logo {
     margin-right: 40px;
   }
 }
-
 @media (max-width: 520px) {
   .footer {
     &__info {

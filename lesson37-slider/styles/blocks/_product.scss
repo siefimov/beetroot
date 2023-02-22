@@ -5,13 +5,11 @@
   }
   &__slider {
     position: relative;
-    // width: 1200px;
   }
   &__list {
     margin-bottom: 50px;
   }
   &__item {
-    // max-width: 224px;
     padding: 20px 9px;
     border: 1px solid $brown-light;
     transition: border 0.5s ease;
@@ -70,7 +68,6 @@
     display: flex;
     width: 227px;
     padding: 15px 54px;
-    // box-sizing: border-box;
     &:hover {
       border: 2px solid $tomato-light;
       color: white;
@@ -117,10 +114,10 @@
 
 @media (max-width: 1320px) {
   .prev-btn {
-    left: 40px;
+    left: 10px;
   }
   .next-btn {
-    right: 40px;
+    right: 10px;
   }
 }
 
@@ -163,13 +160,12 @@
   .swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
   .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
     display: block;
-    margin: 0 0 0 150px;  
+    margin: 0 0 0 150px;
   }
   .prev-btn,
   .next-btn {
     display: none;
   }
-  
 }
 .swiper-pagination-bullet {
   width: 20px;

@@ -115,19 +115,22 @@
   .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin-right: 20px;
   }
+  .img-gradient img {
+    max-width: none;
+    height: 380px;
+  }
 }
 
 @media (max-width: 760px) {
   .swiper-slider {
     max-height: none;
-    // min-height: 384px;
     height: 100%;
     width: 100%;
   }
-  .swiper-slide .img-gradient img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: left;
+}
+
+@media (max-width: 330px) {
+  .swiper-slide__content {
+    right: 20px;
   }
 }

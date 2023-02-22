@@ -23,19 +23,16 @@ a:active {
   outline: none;
 }
 
-/* Links */
 a,
 a:link,
 a:visited {
   text-decoration: none;
-  /*display: inline-block;*/
 }
 
 a:hover {
   text-decoration: none;
 }
 
-/* Common */
 aside,
 nav,
 footer,
@@ -114,7 +111,7 @@ legend {
   display: block;
 }
 
-/* base styles */ /* -------------------- */
+/* -------------------- */
 /* --- BASE STYLES --- */
 /* -------------------- */
 html,
@@ -195,7 +192,6 @@ body {
     transition: all 0.3s ease-in;
   }
 }
-/*--------------------------*/
 .header {
   border-bottom: 1px solid rgba(238, 238, 238, 0.1);
   background-color: #F8F1EA;
@@ -292,9 +288,6 @@ body {
   transition: all 0.3s ease;
 }
 
-/*--------------------------*/
-/*------ media query -------*/
-/*--------------------------*/
 @media (max-width: 850px) {
   .header__menu {
     margin-right: 24px;
@@ -506,6 +499,10 @@ body {
   .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin-right: 20px;
   }
+  .img-gradient img {
+    max-width: none;
+    height: 380px;
+  }
 }
 @media (max-width: 760px) {
   .swiper-slider {
@@ -513,11 +510,10 @@ body {
     height: 100%;
     width: 100%;
   }
-  .swiper-slide .img-gradient img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: left;
+}
+@media (max-width: 330px) {
+  .swiper-slide__content {
+    right: 20px;
   }
 }
 .product {
@@ -640,10 +636,10 @@ body {
 
 @media (max-width: 1320px) {
   .prev-btn {
-    left: 40px;
+    left: 10px;
   }
   .next-btn {
-    right: 40px;
+    right: 10px;
   }
 }
 @media (max-width: 768px) {
