@@ -1,19 +1,25 @@
 const app = document.querySelector("#app");
-const search = document.querySelector("#btn-search");
 const userInput = document.querySelector("#user-input");
-let modifyiedInput = "";
+const search = document.querySelector("#btn-search");
 
 const _endpoint = "https://www.omdbapi.com/";
 const apiKey = "&apikey=d3db9187";
+let modifyiedInput = "";
 
+// ***********************************
+//* search and display title of movie
+// ***********************************
 const displayMovieTitle = () => {
   event.preventDefault();
+
   modifyiedInput = userInput.value.split(" ").join("+");
 
   fetch(_endpoint + "?t=" + modifyiedInput + apiKey)
     .then((data) => data.json())
     .then((obj) => {
-      console.log(typeof obj.Title);
+      console.log(obj);
+      console.log(typeof obj.Ratings);
+      console.log(obj.Ratings);
 
       if (typeof obj.Title === "undefined") {
         const movieTitle = document.createElement("h2");
@@ -38,9 +44,15 @@ const displayMovieTitle = () => {
       divTitle.append(btnDetails);
       app.append(divTitle);
     });
+  userInput.value = "";
+  userInput.focus();
 };
 
+// ***********************************
+//* display and hide ditails of movie
+// ***********************************
 const displayMovieDetails = (e) => {
+  // check if click was on button
   const isButton = e.target.nodeName === "BUTTON";
   if (!isButton) {
     return;
@@ -48,10 +60,10 @@ const displayMovieDetails = (e) => {
 
   const titleWrapper = e.target.parentElement;
   const movieTitle = e.target.previousSibling.children[1].innerText;
-  // e.target.innerText = e.target.innerText === "DETAILS" ? "HIDE" : "DETAILS";
+
   if (e.target.innerText === "HIDE") {
-    titleWrapper.nextElementSibling.style.display = "none";
-    e.target.innerText = e.target.innerText === "HIDE" ? "DETAILS" : "HIDE";
+    app.removeChild(e.target.parentElement.nextSibling);
+    e.target.innerText = "DETAILS";
     return;
   }
 
@@ -88,6 +100,17 @@ const displayMovieDetails = (e) => {
 search.addEventListener("click", displayMovieTitle);
 
 app.addEventListener("click", displayMovieDetails);
-/*
 
-*/
+
+// ============================================
+fetch(_endpoint + "?t=" + modifyiedInput + apiKey)
+  .then((data) => data.json())
+  .then((obj) => {
+    // console.log(obj.Ratings[0]);
+    
+    [obj.Ratings].forEach((item) => {
+      for (let key in item) {
+        console.log(key, item[key]);
+      }
+    });
+  });

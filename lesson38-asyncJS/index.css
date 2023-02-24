@@ -8,9 +8,14 @@ body {
   padding-bottom: 30px;
   max-width: 980px;
   margin: 0 auto;
-  /* text-align: center; */
   background-color: #232529;
   color: lightgray;
+}
+.container p {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 #form {
@@ -18,7 +23,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-direction: column; */
 }
 h1 {
   text-align: center;
@@ -38,10 +42,11 @@ input {
 button {
   padding: 10px 20px;
   border-radius: 20px;
-  background-color: rgb(101, 107, 111);
+  background-color: #656b6f;
   cursor: pointer;
   transition: background-color 0.5s ease;
   text-transform: uppercase;
+  min-width: 100px;
 }
 button:hover {
   background-color: lightslategrey;
@@ -65,25 +70,20 @@ button:hover {
 .item-key {
   width: 90px;
   color: lightcoral;
+  color: darkcyan;
 }
-
-.movie-title {
-  margin: 0 auto;
-  
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #292c31;
+  margin-bottom: 10px;
 }
-.title-wrapper{
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-background-color: #292c31;
-margin-bottom: 10px;
-}
-
-.title-name{
+.title-name {
   color: lightcoral;
 }
 
-.title-mark{
+.title-mark {
   font-size: 16px;
 }
