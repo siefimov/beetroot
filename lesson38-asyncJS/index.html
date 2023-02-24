@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Asynchronous JS</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="search-title">Search Movies</h1>
+      <p>
+        Enter the desired movie's title in the search field. Then click the search button. You can
+        repeat these actions again by searching for the title of one more movie or revealing details
+        in the found movie.
+      </p>
+      <form id="form">
+        <label for="user-input" id="label-title"></label>
+        <input type="text" name="title" id="user-input" autofocus placeholder="movie title..." />
+        <button id="btn-search" type="submit">search</button>
+      </form>
+      <div id="app"></div>
+    </div>
+
+    <script src="./index.js"></script>
+    
+  </body>
+</html>
