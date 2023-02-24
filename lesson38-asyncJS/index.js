@@ -100,17 +100,3 @@ const displayMovieDetails = (e) => {
 search.addEventListener("click", displayMovieTitle);
 
 app.addEventListener("click", displayMovieDetails);
-
-
-// ============================================
-fetch(_endpoint + "?t=" + modifyiedInput + apiKey)
-  .then((data) => data.json())
-  .then((obj) => {
-    // console.log(obj.Ratings[0]);
-    
-    [obj.Ratings].forEach((item) => {
-      for (let key in item) {
-        console.log(key, item[key]);
-      }
-    });
-  });
