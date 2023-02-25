@@ -17,14 +17,10 @@ const displayMovieTitle = () => {
   fetch(_endpoint + "?t=" + modifyiedInput + apiKey)
     .then((data) => data.json())
     .then((obj) => {
-      console.log(obj);
-      console.log(typeof obj.Ratings);
-      console.log(obj.Ratings);
-
       if (typeof obj.Title === "undefined") {
         const movieTitle = document.createElement("h2");
         movieTitle.classList.add("movie-title");
-        movieTitle.innerText = "Movie not found";
+        movieTitle.innerText = `Movie '${modifyiedInput}' not found`;
         app.append(movieTitle);
         return;
       }
