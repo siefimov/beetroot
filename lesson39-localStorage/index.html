@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Local Storage</title>
+  </head>
+  <body>
+    <h2 class="header">Weather in Kyiv</h2>
+    <div id="app">
+      <div id="date">
+        <span class="date-day"></span>
+        <span class="date-time"></span>
+      </div>
+      <br />
+      <div class="wrapper">temperature: <span class="temp__data"></span></div>
+      <div class="wrapper">description: <span class="description__data"></span></div>
+      <div class="wrapper">pressure: <span class="pressure__data"></span></div>
+      <div class="wrapper">wind: <span class="speed__data"></span></div>
+    </div>
+    <script src="./api.js" type="module"></script>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
