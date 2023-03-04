@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Project 02 - Javascript</title>
+  </head>
+  <body>
+    <!--  -->
+    <div class="welcome-wrapper">
+      <form id="welcome">
+        <input type="text" name="name" id="name" />
+        <a href="./togo.html" type="submit" class="next-btn">next</a>
+      </form>
+    </div>
+    <!--  -->
+    <div class="todo-wrapper">
+      <h3 class="greetings">You are welcome, <span class="greetings__name"></span>!</h3>
+      <div class="todo">
+        <h2 class="todo__title">Things to do</h2>
+        <p class="todo__counter">
+          <span class="todo__done"></span> from <span class="todo__all"></span> done
+        </p>
+
+        <input class="search__input" type="text" placeholder="search..." />
+
+        <div class="todo__tags">
+          <button class="todo__tags-all">All</button>
+          <button class="todo__tags-active">Active</button>
+          <button class="todo__tags-done">Done</button>
+        </div>
+        <div class="container__items"></div>
+        <form id="to-do">
+          <input type="text" id="input-value" placeholder="+ Add new item" value="" />
+          <button type="button" class="todo__add-item">Add</button>
+        </form>
+      </div>
+    </div>
+
+    <!--  -->
+    <script src="./todo.js" type="module"></script>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
