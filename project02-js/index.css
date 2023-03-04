@@ -44,14 +44,13 @@ body {
 /* ==== */
 
 .todo-wrapper {
-  
   padding: 10px;
   background-color: #3d3c3c;
   border-radius: 20px;
-  display: flex;
+  /* display: none; */
+  /* display: flex; */
   flex-direction: column;
   width: 300px;
-  display: none;
 }
 .greetings {
   text-align: center;
@@ -61,7 +60,7 @@ body {
   margin-bottom: 20px;
   color: white;
 }
-.container__items{
+.container__items {
   margin-bottom: 20px;
 }
 .todo {

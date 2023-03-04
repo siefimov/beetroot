@@ -32,13 +32,13 @@ const addItemsOnLoad = () => {
       itemsContainer.insertAdjacentHTML("beforeend", newBlock);
     });
   }
+
+  if (localStorage.getItem("user-name") == null) {
+    $(".todo-wrapper").style.display = "none";
+  }
 };
 window.addEventListener("load", addItemsOnLoad);
 
-// get userName
-const getUserName = () => {
-  localStorage.setItem("user-name", userName.value);
-};
 
 nextBtn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -57,16 +57,10 @@ nextBtn.addEventListener("click", (e) => {
 
 const button = $(".todo__add-item");
 
-// const itemsContainer = $(".container__items");
-
 const addItem = (e) => {
   e.preventDefault();
 
   let inputValue = $("#input-value").value;
-
-  // let todos = JSON.parse(localStorage.getItem("todoContainer"));
-  // todos.push(inputValue);
-  // localStorage.setItem("todoContainer", JSON.stringify(todos));
 
   // if there is nothing at the start then save an empty array
   if (localStorage.getItem("todoContainer") == null) {
