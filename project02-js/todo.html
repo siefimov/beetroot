@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>To Do</title>
+  </head>
+  <body>
+    <div class="todo-wrapper">
+      <h3 class="greetings">You are welcome, <span class="greetings__name"></span>!</h3>
+      <div class="todo">
+        <h2 class="todo__title">Things to do</h2>
+        <p class="todo__counter">
+          <span class="todo__done"></span>from <span class="todo__all"></span>done
+        </p>
+        <form id="to-do">
+          <input type="search" name="search" id="search" />
+        </form>
+        <div class="todo__tags">
+          <p class="todo__tags-all">All</p>
+          <p class="todo__tags-active">Active</p>
+          <p class="todo__tags-done">Done</p>
+        </div>
+        <p class="todo__add-item">+ Add new item</p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3d3c3c;
+  height: 100vh;
+}
+.welcome-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 100px;
+  background-color: #282a2a;
+  border-radius: 20px;
+}
+#name {
+  padding: 6px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  width: 250px;
+  background-color: #565a5e;
+  text-align: center;
+  margin-right: 15px;
+}
+.next-btn {
+  padding: 5px 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: #565a5e;
+  cursor: pointer;
+}
+.next-btn:hover {
+  background-color: lightslategrey;
+}
+
+/* ==== */
+
+.todo-wrapper {
+  padding: 10px;
+  background-color: #3d3c3c;
+  border-radius: 20px;
+  /* display: none; */
+  /* display: flex; */
+  flex-direction: column;
+  width: 300px;
+}
+.greetings {
+  text-align: center;
+  padding: 5px 10px;
+  background-color: #282a2a;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+.container__items {
+  margin-bottom: 20px;
+}
+.todo {
+  padding: 15px 20px;
+  background-color: #282a2a;
+  border-radius: 20px;
+}
+.todo__title {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.todo__counter {
+  display: flex;
+  justify-content: center;
+  color: lightslategrey;
+  padding: 10px 15px;
+  gap: 10px;
+}
+.todo__tags {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 10px;
+}
+.todo__tags button {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: #3d3c3c;
+  color: white;
+}
+.item-content {
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-content span {
+  display: inline-block;
+}
+
+.checked-item {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: #282a2a;
+  display: inline-block;
+  margin-right: 10px;
+}
+.checked-item-done {
+  position: relative;
+  top: -5px;
+  width: 10px;
+  height: 20px;
+  border: none;
+  border-radius: none;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  transform: rotate(30deg);
+}
+.checked-text {
+  text-decoration: line-through;
+  color: #565a5e;
+}
