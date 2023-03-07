@@ -1,19 +1,72 @@
 const $ = document.querySelector.bind(document);
 const nextBtn = $(".next-btn");
 const userName = $("#name");
-let allTodos = 0;
-let doneTodos = 0;
+
+let numAllTodos;
+let numDoneTodos;
 
 const welcomeWrapper = $(".welcome-wrapper");
-welcomeWrapper.style.display = localStorage.getItem("welcome") || "flex";
-
+const todoWrapper = $(".todo-wrapper");
 const greetingsName = $(".greetings__name");
-greetingsName.innerText = localStorage.getItem("user-name") || "";
-
 const itemsContainer = $(".container__items");
 
-// ================================
+// ===
+const upAllTodos = () => {
+  numAllTodos = JSON.parse(localStorage.getItem("numTodosAll"));
+  numAllTodos++;
+  localStorage.setItem("numTodosAll", numAllTodos);
+
+  $(".todo__all").innerText = numAllTodos;
+};
+
+const downAllTodos = () => {
+  numAllTodos = JSON.parse(localStorage.getItem("numTodosAll"));
+  console.log(numAllTodos);
+
+  numAllTodos--;
+  console.log(numAllTodos);
+
+  localStorage.setItem("numTodosAll", numAllTodos);
+  $(".todo__done").innerText = numAllTodos;
+};
+
+const upDoneTodos = () => {
+  numDoneTodos = JSON.parse(localStorage.getItem("numTodosDone"));
+  numDoneTodos++;
+  localStorage.setItem("numTodosDone", numDoneTodos);
+  $(".todo__done").innerText = numDoneTodos;
+};
+const downDoneTodos = () => {
+  numDoneTodos = JSON.parse(localStorage.getItem("numTodosDone"));
+  numDoneTodos--;
+  localStorage.setItem("numTodosDone", numDoneTodos);
+  $(".todo__done").innerText = numDoneTodos;
+};
+
+//* ================================
+//* WHEN PAGE IS LOADED
+//* ===============================
 const addItemsOnLoad = () => {
+  welcomeWrapper.style.display = localStorage.getItem("welcome") || "flex";
+  todoWrapper.style.display = localStorage.getItem("todo") || "none";
+
+  greetingsName.innerText = localStorage.getItem("user-name") || "";
+
+  if (localStorage.getItem("numTodosAll") == null) {
+    localStorage.setItem("numTodosAll", "0");
+  }
+  if (localStorage.getItem("numTodosDone") == null) {
+    localStorage.setItem("numTodosDone", "0");
+  }
+  if (localStorage.getItem("numTodosActive") == null) {
+    localStorage.setItem("numTodosActive", "0");
+  }
+
+  let numAllTodos = JSON.parse(localStorage.getItem("numTodosAll"));
+  let numDoneTodos = JSON.parse(localStorage.getItem("numTodosDone"));
+  $(".todo__all").innerText = numAllTodos;
+  $(".todo__done").innerText = numDoneTodos;
+
   if (localStorage.getItem("todoContainer") == null) {
     return " ";
   } else {
@@ -36,29 +89,39 @@ const addItemsOnLoad = () => {
   if (localStorage.getItem("user-name") == null) {
     $(".todo-wrapper").style.display = "none";
   }
+  $("#input-value").focus();
 };
 window.addEventListener("load", addItemsOnLoad);
 
-
+// * =================================
+// * click on button after enter name
+// * =================================
 nextBtn.addEventListener("click", (e) => {
   e.preventDefault();
   localStorage.setItem("user-name", userName.value);
   greetingsName.innerHTML = localStorage.getItem("user-name");
 
   localStorage.setItem("welcome", "none");
+  localStorage.setItem("todo", "flex");
 
   $(".welcome-wrapper").style.display = localStorage.getItem("welcome");
-  $(".todo-wrapper").style.display = "flex";
+  $(".todo-wrapper").style.display = localStorage.getItem("todo");
 });
 
-// ================================== //
+//* ================================== //
 //* ADD NEW ITEM //
-// ================================== //
+//* ================================== //
 
-const button = $(".todo__add-item");
+// const button = $(".todo__add-btn");
+const button = $("#to-do");
 
 const addItem = (e) => {
   e.preventDefault();
+  console.log(e.target);
+
+  if (!e.target.classList.contains("todo__add-btn")) {
+    return;
+  }
 
   let inputValue = $("#input-value").value;
 
@@ -91,11 +154,8 @@ const addItem = (e) => {
     $("#input-value").value = "";
     $("#input-value").focus();
 
-    allTodos++;
-    console.log(allTodos);
-
-    $(".todo__all").innerText = allTodos;
-    $(".todo__done").innerHTML = doneTodos;
+    // change number of all todos
+    upAllTodos();
   } else {
     $("#input-value").focus();
   }
@@ -110,10 +170,16 @@ const doneButton = $(".container__items");
 const doneItem = (e) => {
   if (e.target.classList.contains("checked-item")) {
     console.log(e.target);
-    e.target.nextElementSibling.classList.add("checked-text");
-    e.target.classList.add("checked-item-done");
-    doneTodos++;
-    $(".todo__done").innerHTML = doneTodos;
+    e.target.classList.toggle("checked-item-done");
+    e.target.nextElementSibling.classList.toggle("checked-text");
+    if (
+      // e.target.classList.contains("checked-item") &&
+      e.target.classList.contains("checked-item-done")
+    ) {
+      downDoneTodos();
+    } else {
+      upDoneTodos();
+    }
   }
 };
 
@@ -151,6 +217,11 @@ const removeItem = (e) => {
   if (e.target.classList.contains("remove-item")) {
     itemsContainer.removeChild(e.target.parentElement.parentElement);
   }
+
+  // change number of all todos
+  downAllTodos();
+  // change number of done todos
+  downDoneTodos();
 };
 
 removeButton.addEventListener("click", removeItem);
